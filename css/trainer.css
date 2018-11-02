@@ -1,0 +1,217 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-size: calc(100vw/7.5)!important;
+}
+.trainer {
+	width: 100%;
+	
+	max-width: 750px;
+	min-width: 320px;
+}
+.trainer ul li{
+	list-style: none;
+}
+.trainer .container{
+	    margin-top: 13vw;
+	padding: 0 15px;
+}
+.trainer  .bodys{
+	padding: 15px 12px;
+	background-color: #d4f1ff;
+	border-radius: 10px;
+}
+.trainer .titleimg img{
+	width: 100%;
+}
+.trainer .box{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	border: 1px solid #a8c8df;
+	background-color: #fff;
+	margin-top: 25px;
+	position: relative;
+	
+	border-radius: 10px;
+	font-size: 0.3rem;
+}
+.trainer .box1{
+	text-align: center;
+	margin-top: 0;
+}
+
+.trainer .box-title{
+	 position: absolute;
+    border: 2px solid #385366;
+    font-size: 1.1rem;
+    color: #397597;
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 10px 10px 10px 10px;
+    top: 0;
+    left: 50%;
+    margin-left: -3.5rem;
+        margin-top: -1.05rem;
+    background-color: #fff;
+}
+.mark{
+	margin-top: 25px;
+}
+.mark-number{
+	font-size: 5.5rem;
+	color: #ff5256;
+}
+.time .atime{
+	font-size: 1.1rem;
+	color: #2d6f8f;
+}
+.time .btime{
+	font-size: 0.5rem;
+	color: #5e7b8b;
+}
+.time{
+	padding: 10px 0;
+	text-align: center;
+}
+.box2 .head-box {
+	position: relative;
+}
+.box2 .head-box .head{
+	width: 15.222vw;
+	height: 15.222vw;
+	border-radius: 50%;
+	overflow: hidden;
+	border: 2px solid #aac1d1;
+	display: inline-block;
+}
+.teach-name{
+	display: inline-block;
+	font-size: 1.2rem;
+	vertical-align: middle;
+	position: absolute;
+	bottom: 5px;
+	font-size: 200;
+	padding-left: 15px;
+}
+.box2 .head-box .head img{
+	width: 100%;
+	
+}
+.box2{
+	padding: 0 12px;
+}
+.box2 .text{
+	font-size: 0.9rem;
+}
+.footer {
+    
+    bottom: 1.85185vw;
+    
+}
+ .footer .progress-wrapper {
+    display: -ms-flexbox;
+    display: flex;
+    height: 20px;
+	padding: 10px 0;
+}
+.footer .progress-wrapper .progress-time.progress-time-l {
+    text-align: left;
+	    font-size: 0.9rem;
+		color: #acacac;
+}
+.footer .progress-wrapper .progress-time {
+    width: 11.11111vw;
+    line-height: 20px;
+    font-size: 2.77778vw;
+    color: #000;
+}
+.mmProgress {
+    position: relative;
+    width: 100%;
+    height: 2px;
+    padding: 9px 0;
+    margin: 0 10px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.mmProgress .mmProgress-bar {
+    height: 7px;
+    width: 100%;
+    background-color: #dddddd;
+	border-radius: 20px 20px 20px 20px;
+}
+
+.mmProgress .mmProgress-inner {
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    background-color: #96ddfb;
+}
+.mmProgress .mmProgress-inner, .mmProgress .mmProgress-outer {
+    position: absolute;
+    top: 60%;
+    left: 0;
+    display: inline-block;
+    width: 0;
+    height: 7px;
+	border-radius: 20px 20px 20px 20px;
+}
+.mmProgress .mmProgress-inner .mmProgress-dot {
+    position: absolute;
+    top: 50%;
+    right: -9px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    -webkit-transform: translate3d(0,-50%,0);
+    transform: translate3d(0,-50%,0);
+    background-color: #42baf9;
+}
+.footer .progress-wrapper .progress-time.progress-time-r {
+    text-align: right;
+	    font-size: 0.9rem;
+		color: #acacac;}
+.footer .progress-wrapper .progress-time {
+    width: 11.11111vw;
+    line-height: 20px;
+    font-size: 2.77778vw;
+    color: #000;
+}
+.play{
+	background: url(../img/6580B28FBA6CAB2CFCDD2A45E4AD279B_03.png) no-repeat;
+	height: 17vw;
+    width: 17vw;
+    background-size: 100%;
+    position: relative;
+    top: -1.8vw;
+}
+.box3 ul li div{
+	display: inline-block;
+	width: 48%;
+}
+.box3 ul li {
+	width: 70%;
+	margin: 0 auto;
+	font-size: 1rem;
+	line-height: 3;
+}
+.box3 ul {
+	padding: 20px 0;
+}
+.box3 ul li img{
+	width: 1.8rem;
+	vertical-align: text-bottom;
+	margin-right: 5px;
+}
+.box3 ul li div:last-child{
+	text-align: right;
+}
+.box3 ul li div:last-child span:last-child{
+	text-align: left;
+	display: inline-block;
+	    width: 60%;
+}
