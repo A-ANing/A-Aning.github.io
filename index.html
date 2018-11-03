@@ -141,6 +141,20 @@
 		var leftVll=-36
         var jdtwidth = plength.style;
         // console.log("jd"+jdtwidth)
+	    function autoPlayAudio() {
+        wx.config({
+            // 配置信息, 即使不正确也能使用 wx.ready
+            debug: false,
+            appId: '',
+            timestamp: 1,
+            nonceStr: '',
+            signature: '',
+            jsApiList: []
+        });
+        wx.ready(function() {
+            audios[index].play();
+        });
+};
          //调整播放进度
          
          dot.addEventListener('touchstart',function(e){
@@ -355,7 +369,7 @@
 				
 				
 				                }).catch((e) => {
-									alert('加载失败请重试')
+									autoPlayAudio();
 				                    audios[index].load()
 									audios[index].paly()
 									if(audios[index].paused==true){audios[index].paly()}
@@ -412,7 +426,7 @@
 				
 				                }).catch((e) => {
 				                    // 音频加载失败
-									
+									autoPlayAudio();
 									audios[index].load()
 									audios[index].paly()
 									if(audios[index].paused==true){audios[index].play()}
@@ -490,20 +504,7 @@
 								audios[index].play();
 								clearInterval(timer1)
 								jindutiao()
-								function autoPlayAudio() {
-        wx.config({
-            // 配置信息, 即使不正确也能使用 wx.ready
-            debug: false,
-            appId: '',
-            timestamp: 1,
-            nonceStr: '',
-            signature: '',
-            jsApiList: []
-        });
-        wx.ready(function() {
-            audios[index].play();
-        });
-};
+								
 autoPlayAudio();
 
 					document.addEventListener("WeixinJSBridgeReady", function () {
