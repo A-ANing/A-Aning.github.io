@@ -490,31 +490,12 @@
 								clearInterval(timer1)
 								jindutiao()
 								
-					if (typeof WeixinJSBridge == "object" && typeof WeixinJSBridge.invoke == "function") {
-            audios[index].play();
-			clearInterval(timer1)
-			jindutiao()
-        } else {
-            //監聽客户端抛出事件"WeixinJSBridgeReady"
-            if (document.addEventListener) {
-                document.addEventListener("WeixinJSBridgeReady", function(){
-                    audios[index].play();
-			clearInterval(timer1)
-			jindutiao()
-                }, false);
-            } else if (document.attachEvent) {
-                document.attachEvent("WeixinJSBridgeReady", function(){
-                    audios[index].play();
-			clearInterval(timer1)
-			jindutiao()
-                });
-                document.attachEvent("onWeixinJSBridgeReady", function(){
-                    audios[index].play();
-			clearInterval(timer1)
-			jindutiao()
-                });
-            }
-        }
+					document.addEventListener("WeixinJSBridgeReady", function () {//微信
+　　　　audios[index].play();
+　　}, false);
+　　document.addEventListener('YixinJSBridgeReady', function() {//易信
+　　　　audios[index].play();
+　　}, false);
 
 
 								}else{
