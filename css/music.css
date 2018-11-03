@@ -1,0 +1,255 @@
+.music_cd .needle{
+    background: url(../image/music/needle.png) no-repeat;
+    position: absolute;
+    top: -4.62963vw;
+    left: 50%;
+    z-index: 9;
+    width: 25.55556vw;
+    height: 38.33333vw;
+    /* background-image: url(/static/media/needle.047d988b.png); */
+    background-position: 50%;
+    background-size: contain;
+    -webkit-transform: translate3d(-3.24074vw,0,0);
+    transform: translate3d(-3.24074vw,0,0);
+    -webkit-transform-origin: 4.44444vw 4.44444vw;
+    -ms-transform-origin: 4.44444vw 4.44444vw;
+    transform-origin: 4.44444vw 4.44444vw;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+	-webkit-transform: translate3d(-3.24074vw,0,0) rotate(-30deg);
+	transform: translate3d(-3.24074vw,0,0) rotate(-30deg);
+}
+.music_cd .needled {
+    -webkit-transform: translate3d(-3.24074vw,0,0) rotate(0deg);
+    transform: translate3d(-3.24074vw,0,0) rotate(0deg);
+}
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	background: #000000;
+}
+.pg_musicbody{
+    position: fixed;
+    /* top: 45px; */
+}
+.pg_music{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.bodys{
+    width: 100%;
+    height: 100%;
+}
+.pg_musicbody{
+    width: 100%;
+    height: 100%;
+}
+.music_cd{
+    width: 100%;
+    height: 100%;
+}
+.disc{
+position: relative;
+z-index: 1;
+width: 100%;
+height: 100%;
+border-radius: 50%;
+background: hsla(0,0%,100%,.1);
+background-image: url(../image/music/disc.png);
+background-position: 50%;
+background-size: contain;
+background-repeat: no-repeat;
+}
+.disc-box{
+    position: absolute;
+    top: 17.59259vw;
+    left: 50%;
+    width: 72.44444vw;
+    height: 72.44444vw;
+    margin-left: -36.22222vw;
+    -webkit-animation: circle-rotate 12s linear infinite;
+    animation: circle-rotate 12s linear infinite;
+}
+.disc-boxs{
+    position: absolute;
+    top: 17.59259vw;
+    left: 136%;
+    width: 72.44444vw;
+    height: 72.44444vw;
+    margin-left: -36.22222vw;
+    -webkit-animation: circle-rotate 12s linear infinite;
+    animation: circle-rotate 12s linear infinite;
+}
+.disc-boxsl{
+    position: absolute;
+    top: 17.59259vw;
+    left: -36%;
+    width: 72.44444vw;
+    height: 72.44444vw;
+    margin-left: -36.22222vw;
+    -webkit-animation: circle-rotate 12s linear infinite;
+    animation: circle-rotate 12s linear infinite;
+}
+.music_cd .disc-boxsl img,
+.music_cd .disc-boxs img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 49.07407vw;
+    height: 49.07407vw;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+.music_cd .disc-box img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 49.07407vw;
+    height: 49.07407vw;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+.pg_music .music_flooter {
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 20px;
+    height: 29.62963vw;
+}
+.pg_music  .music_flooter .progress-wrapper {
+    display: -ms-flexbox;
+    display: flex;
+    height: 20px;
+    padding: .74074vw 4.62963vw 0;
+    margin-bottom: 3vw;
+}
+.pg_music  .music_flooter .progress-wrapper .progress-time {
+    width: 11.11111vw;
+    line-height: 20px;
+    font-size: 2.77778vw;
+    color: #fff;
+}
+.pg_music  .music_flooter .mmProgress {
+    position: relative;
+    width: 100%;
+    height: 2px;
+    padding: 9px 0;
+    margin: 0 10px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.mmProgress .mmProgress-inner, .mmProgress .mmProgress-outer{
+    position: absolute;
+    top: 50%;
+    display: inline-block;
+}
+.mmProgress .mmProgress-outer{
+    background-color: aqua;
+}
+.mmProgress .mmProgress-inner{
+    
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    background-color: red;
+    height: 2px;
+    
+}
+.mmProgress-dot{
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    /* background-color: #fff; */
+    right: -26px;
+    z-index: 999;
+    width: 50px;
+    height: 50px;
+    display: -moz-box;  /* Firefox */
+display: -ms-flexbox;    /* IE10 */
+display: -webkit-box;    /* Safari */ 
+display: -webkit-flex;    /* Chrome, WebKit */
+display: box; 
+display: flexbox; 
+display: flex;
+-webkit-box-align: center;
+-webkit-align-items: center;
+align-items: center;
+justify-content:center;
+    border-radius: 50%;
+    -webkit-transform: translate3d(0,-50%,0);
+    transform: translate3d(0,-50%,0);
+}
+.mmProgress-dot .dar{
+    background-color: #fff;
+    height: 18px;
+    width: 18px;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+.mmProgress .mmProgress-bar{
+    height: 2px;
+    width: 100%;
+    
+    background-color:hsla(0,0%,100%,.15);
+}
+.pg_music  .music_flooter .btn-wrapper {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 90px;
+}
+.pg_music .pagetop{
+    position: fixed!important;
+}
+.pg_music .pagetop .mail-log{
+    color: #fff;
+}
+.pg_music  .music_flooter .btn-wrapper .btnf {
+    background-position: 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.pg_music  .music_flooter .btn-wrapper .btn-prev {
+    width: 19.81481vw;
+    height: 19.81481vw;
+    background-image: url(../image/music/prev.png);
+}
+.pg_music  .music_flooter .btn-wrapper .btn-play {
+    width: 23.33333vw;
+    height: 23.33333vw;
+    background-image: url(../image/music/play.png);
+}
+.pg_music  .music_flooter .btn-wrapper .btn-stop {
+    background-image: url(../image/music/pause.png);
+}
+.pg_music  .music_flooter .btn-wrapper .btn-startdown {
+    width: 23.33333vw;
+    height: 23.33333vw;
+    background-image: url(../image/music/min-pause.png)!important;
+}
+.pg_music  .music_flooter .btn-wrapper .btn-stopdown {
+    background-image: url(../image/music/min-play.png)!important;
+}
+
+.pg_music  .music_flooter .btn-wrapper .btn-next {
+    width: 19.81481vw;
+    height: 19.81481vw;
+    background-image: url(../image/music/next.png);
+}
+
+.pg_music  .music_flooter .btn-wrapper .btn-list {
+    width: 19.81481vw;
+    height: 19.81481vw;
+    background-image: url(../image/music/mode-list.png);
+}
