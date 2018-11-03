@@ -485,7 +485,7 @@
 							// 音频加载失败
 							
 							var acttime=setInterval(function(){
-								if(audios[index].paused==true||time_r.innerHTML=='99:99'){
+								if(audios[index].paused==true||isNaN(time_r.innerHTML)==true){
 									alert(audios[index])
 									audios[index].paly()
 									addtime()
