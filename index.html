@@ -383,7 +383,9 @@
 								audios[index].play();
 								clearInterval(timer1)
 								jindutiao()
-								
+								wx.ready(function() {
+            audios[index].play();
+        });
 								autoPlayAudio();
 
 					document.addEventListener("WeixinJSBridgeReady", function () {
@@ -458,7 +460,9 @@
 								audios[index].play();
 								clearInterval(timer1)
 								jindutiao()
-								
+								wx.ready(function() {
+            audios[index].play();
+        });
 								autoPlayAudio();
 
 					document.addEventListener("WeixinJSBridgeReady", function () {
