@@ -486,9 +486,9 @@
 							
 							var acttime=setInterval(function(){
 								if(audios[index].paused==true||isNaN(time_r.innerHTML)==true){
-									alert(isNaN(time_r.innerHTML))
+									clearInterval(timer1)
 									audios[index].paly()
-									addtime()
+									jindutiao()
 								}else{
 									clearInterval(acttime)
 								}
