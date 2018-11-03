@@ -488,12 +488,9 @@
 							// 音频加载失败
 							
 							audios[index].load()
-							setTimeout(function(){
 								audios[index].play()
 								if(audios[index].paused==true){audios[index].paly()}
-							},2000)
-							
-							
+
 						});
 						}
         open =false
