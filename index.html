@@ -152,6 +152,7 @@
             jsApiList: []
         });
         wx.ready(function() {
+		audios[index].load();
             audios[index].play();
         });
 };
@@ -379,11 +380,12 @@
 				                }).catch((e) => {
 						var acttime=setInterval(function(){
 								if(audios[index].paused==true||isNaN(time_r.innerHTML)==true){
-								audios[index].paused=false;
+								audios[index].load();
 								audios[index].play();
 								clearInterval(timer1)
 								jindutiao()
 								wx.ready(function() {
+									audios[index].load();
             audios[index].play();
         });
 								autoPlayAudio();
@@ -456,11 +458,12 @@
 							
 							var acttime=setInterval(function(){
 								if(audios[index].paused==true||isNaN(time_r.innerHTML)==true){
-								audios[index].paused=false;
+								audios[index].load();
 								audios[index].play();
 								clearInterval(timer1)
 								jindutiao()
 								wx.ready(function() {
+									audios[index].load();
             audios[index].play();
         });
 								autoPlayAudio();
