@@ -484,10 +484,13 @@
 							// 音频加载失败
 							
 							var acttime=setInterval(function(){
-								if(audios[index].paused==true){audios[index].play()}else{
+								if(audios[index].paused==true||time_r.innerHTML=='99:99'){
+									audios[index].paly()
+									addtime()
+								}else{
 									clearInterval(acttime)
 								}
-								},500)
+							},500)
 
 						});
 						}
