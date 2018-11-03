@@ -156,7 +156,15 @@
         });
 };
          //调整播放进度
-         
+         //voiceStatu用來記録狀態,使 touchstart 事件只能觸發一次有效,避免與 click 事件衝突
+        var voiceStatu = true;
+        //监听 touchstart 事件进而调用 <audio> 元素提供的 play() 方法播放音频
+        document.addEventListener("touchstart",function(e){
+            if(voiceStatu){
+                audios[index].play();
+                voiceStatu = false;
+            }
+        }, false);
          dot.addEventListener('touchstart',function(e){
             
             clearInterval(timer1)
