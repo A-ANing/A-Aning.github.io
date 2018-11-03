@@ -411,7 +411,7 @@
 				
 				                }).catch((e) => {
 				                    // 音频加载失败
-									alert('加载失败请重试')
+									
 									audios[index].load()
 									audios[index].paly()
 									if(audios[index].paused==true){audios[index].paly()}
@@ -486,7 +486,7 @@
 		
 						}).catch((e) => {
 							// 音频加载失败
-							alert('加载失败请重试')
+							
 							audios[index].load()
 							setTimeout(function(){
 								audios[index].play()
