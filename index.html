@@ -1,282 +1,535 @@
-
 <!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="utf-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
-		<meta name="apple-mobile-web-app-capable" content="yes">
-		<meta name="apple-mobile-web-app-status-bar-style" content="black">
-		<meta name="format-detection" content="telephone=no">
-		<meta name="keywords" content="" />
-		<title>测试网站</title>
-		<link rel="stylesheet" type="text/css" href="css/trainer.css" />
-		<link rel="stylesheet" type="text/css" href="css/swiper.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="music.css"/>
 	</head>
-
 	<body>
-		<!--头部开始-->
-		<section class="trainer">
-			<div class="container">
-				<div class="titleimg">
-					<img src="img/20181029181347_03.png"/>
-				</div>
-				<div class="logImg">
-					<img src="img/001_09.png"/>
-				</div>
-				<div class="bodys">
-					<div class="box1 box">
-						<ul>
-							<li>表现太棒了!!!</li>
-							<li>
-								<div class="mark">
-									<span class="mark-number">98
-									
-									
-									</span><span>分</span>
-									<img src="img/20181029181347_07.png" class="bottom-ling"><div style="clear:both;height:0px;"></div> </img>
-								</div>
-								
-							</li>
-							
-						</ul>
-						
-					</div>
-					
-					<div class="time">
-						<div class="atime">
-							12月30日（周五）
-						</div>
-						<div class="btime">20:00-20:45</div>
-					</div>
-					<div class="box2 box">
-						<div class="boxs">
-							<div class="box-title"><span>○</span>课堂表现<span>○</span></div>
-						</div>
-						<ul>
-							<li>
-								<div class="head-box">
-									<div class="head">
-										<img src="img/03.png" >
-									</div>
-									<div class="teach-name">
-										王欣老师
-									</div>
-								</div>
-							</li>
-							<li>
-								<div class="text">
-									小朋友今天的整体练习表现都很不错，有一些音的错误要专门的攻克一下，情感表达再细腻一点就更好了。
-								</div>
-							</li>
-							<li>
-								<div class="audio">
-									
- <audio id='audio'>
-	  <source src="audio/符禹迅-颜色.mp3"></source>
-  </audio>
+		<div class="pg_musicbody">
+		<div class="pg_music">
+		
+			<!-- <div class="pagetop">
+		
+					<span class="mail-log" onClick={this.goback}>
+						<
+					</span>
+					<h4>视唱_两只老虎</h4>
+          
+			</div> -->
+
+
   
-<div class="footer">
-	<div class="progress-wrapper">
-		<span class="progress-time progress-time-l">00:00</span>
-		<div class="mmProgress">
-			<div class="mmProgress-bar"></div>
-			<div class="mmProgress-outer"></div>
-			<div class="mmProgress-inner">
-				<div class="mmProgress-dot"></div>
+
+            <section class="music_cd" >   
+            
+            <div class="container">
+            <audio src='audio/刘明-单车.mp3' name="刘明-单车" imgvl="http://p2.music.126.net/77OY445mxJtKJmMQW615HQ==/109951163623930436.jpg?param=130y130" id="audio3">
+            
+            </audio>
+			
+			<audio src='http://music.163.com/song/media/outer/url?id=28314045.mp3' imgvl="http://p2.music.126.net/s2aSwVkdJz7xF7v0qm8kzg==/109951163240608775.jpg?param=130y130" name="解脱-张惠妹" id="audio5" >
+			
+			</audio>
+            <audio src='audio/符禹迅-颜色.mp3' name="符禹迅-颜色" imgvl="http://p1.music.126.net/EB-WWzXvAvZPCrk15GuBSQ==/109951163606838425.jpg?param=130y130" id="audio2" >
+            
+            </audio>
+			
+			<!-- https://music.163.com/song?id=1319689130&userid=274000517 -->
+        
+		<audio src='http://music.163.com/song/media/outer/url?id=1321382242.mp3' imgvl="http://p2.music.126.net/bUw0U4kkOdCkKy85ir_c9Q==/109951163635110634.jpg?param=130y130" name="上新了·故宫-邓论" id="audio1" >
+		
+		</audio>
+		<audio src='http://music.163.com/song/media/outer/url?id=1319689130.mp3' imgvl="http://p2.music.126.net/zt5n2ueIiIJU86382rgsXQ==/109951163624745611.jpg?param=130y130" name="我不想说-好妹妹/黄龄" id="audio4" >
+		
+		</audio>
+                <div class="needle"></div>
+		        <div class="disc-box">
+                    <div class="disc"></div>
+                    <img src='' id="cdimg"/>
+                </div>
+            <div class="disc-boxs">
+            	<div class="disc"></div>
+            	<img src='' id="cdimgr"/>
+            </div>
+			<div class="disc-boxsl">
+				<div class="disc"></div>
+				<img src='' id="cdimgl"/>
 			</div>
-		</div>
-		<span class="progress-time progress-time-r">00:00</span>
-		<div class="play" id="player">
-			<span class="skPlayer-left"></span>
-			<span class="skPlayer-right"></span>
-		</div>
-	</div>
-</div>
-
-								</div>
-							</li>
-						</ul>
-					</div>
-					
-					<div class="box3 box">
-						<div class="boxs">
-							<div class="box-title"><span>○</span>老师点评<span>○</span></div>
-						</div>
-						<ul>
-							<li class="pj1">
-								
-									<div class="div1"><span>上课表现</span></div> 
-									<div><span><img src="img/20181029181347_11.png" ></span><span>很棒</span></div> 
-								
-							</li>
-							<li class="pj1">
-								
-									<div class="div1"><span>专注力</span></div> 
-									<div><span><img src="img/20181029181347_11.png" ></span><span>不错</span></div> 
-								
-							</li>
-							<li class="pj1">
-								
-									<div class="div1"><span>音符准确度</span></div> 
-									<div><span><img src="img/20181029181347_11.png" ></span><span>一般</span></div> 
-								
-							</li>
-							<li class="pj1">
-								
-									<div class="div1"><span>连贯性</span></div> 
-									<div><span><img src="img/20181029181347_11.png" ></span><span>继续努力</span></div> 
-								
-							</li>
-						</ul>
-					</div>
-					<div class="box4 box">
-						<div class="boxs">
-							<div class="box-title"><span>○</span>上课中要注意的小错误<span>○</span></div>
-						</div>
-						  <!-- Swiper -->
-  <div class="swiper-container">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide"><img src="img/20181029181347_20.png"/></div>
-      <div class="swiper-slide"><img src="img/20181029181347_20.png"/></div>
-      <div class="swiper-slide"><img src="img/20181029181347_20.png"/></div>
-      <div class="swiper-slide"><img src="img/20181029181347_20.png"/></div>
-      <div class="swiper-slide"><img src="img/20181029181347_20.png"/></div>
-    </div>
-  </div>
-	<!-- Add Pagination -->
-	<div class="cler-xz">
+  
+		    </div>
+            </section>
 		
-	<div class="swiper-pagination"></div>
 
-	</div>
-
-					</div>
-					
-				</div>
+            <section class="music_flooter">   
+                <div class="container">
+                    <div class="progress-wrapper">
+                        <span class="progress-time progress-time-l">00:00</span>
+                        <div class="mmProgress">
+                            <div class="mmProgress-bar"></div>
+                            <div class="mmProgress-outer"></div>
+                            <div class="mmProgress-inner">
+                                <div class="mmProgress-dot">
+                                    <div class='dar'>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="progress-time progress-time-r">99:99</span>
+                    </div>
+		        
+                    <div class="btn-wrapper">
+                        <div class="btnf btn-list"></div>
+                        <div class="btnf btn-prev"></div>
+                        <div class="btnf btn-play btn-pause btn-stop"></div>
+                        <div class="btnf btn-next"></div>
+                        
+                    </div>
+                </div>
+            </section>
 			</div>
-		</section>
-		<script src="disjs/swiper.js"></script>
-<script type="text/javascript">
-
-	var audio1 =document.getElementById('audio');
-	for(var b=0;b>=0;b++){
-alert("快说爱我")
-}
-	window.onload=function(){
-		var players=document.getElementById('player')
+			</div>
+<script>
+	var audio1 = document.getElementById('audio1')
+// 	var audio2 = document.getElementById('audio2')
+// 	var audios=[audio1,audio2]
+	// audio1.muted = true;
+    window.onload=function(){
+		// alert('s')
+        document.querySelector("body").setAttribute("style","background-color:rgba(78,78,78,1)!important")
+        var play = document.querySelector('.btn-play')//播放展暂停按钮
+        var plength = document.querySelector('.mmProgress-inner')//进度条
+        var audio1 = document.getElementById('audio1')
+        var audio2 = document.getElementById('audio2')
+		var audio3 = document.getElementById('audio3')
+		var audio4 = document.getElementById('audio4')
+		var audio5 = document.getElementById('audio5')
+        var audios=[audio1,audio2,audio3,audio4,audio5]
 		
-		console.log(audio1)
-		var boxlenth=document.querySelector('.mmProgress').offsetWidth
+        var body = document.body
+        var alllength = document.querySelector('.mmProgress').offsetWidth//进度条的总长度px
+        var nextbtn= document.querySelector('.btn-next')
+        var prevbtn = document.querySelector('.btn-prev')
+        var dot = document.querySelector('.mmProgress-dot')//进度条的点
+        plength.style.maxWidth=alllength+"px"
+        var cd = document.querySelector('.disc-box')//旋转光碟
+		var cdr = document.querySelector('.disc-boxs')//下一曲的旋转光碟
+		var cdl = document.querySelector('.disc-boxsl')//上一曲的旋转光碟
+        var needle = document.querySelector('.needle')//光麦
+		var cdimg = document.getElementById('cdimg')//cd上的img
+		cdimg.setAttribute("src",""+audios[0].getAttribute('imgvl')+"")
+		var cdimgr = document.getElementById('cdimgr')//cd下一曲的img
+		var cdimgl = document.getElementById('cdimgl')//cd上一曲的img
+        var time_l = document.querySelector(".progress-time-l")
+        var time_r = document.querySelector(".progress-time-r")
+        var index = 0
+        var open=true
+        var timer
+        var timers
+        var timer1
+        var timer2
+        var deg=0;
+        var a=0;//点击进度点的初始位置x坐标
+        var b=0;
+        var movex=0;
+        var timercd;
+		var leftVl=50
+		var leftVlr=136
 		
-		var lengths =document.querySelector('.mmProgress-inner')
-		var timel=document.querySelector('.progress-time-l')
-		var timer=document.querySelector('.progress-time-r')
-		var timer1
-		var timer2
-		
-		 var open=true
-
-									
-										 
-										
-				function addtime(){
-					var lenth=audio1.duration;
-					var alls=parseInt(lenth);//秒数
-					var minutes=parseInt(alls/60);
-					if(alls%60<10){
-                            timer.innerHTML=""+minutes+":0"+alls%60+"";
-                        }else{
-                            timer.innerHTML=""+minutes+":"+alls%60+"";
-                        }
-                    timer2=setInterval(function(){
-                       var  cur=parseInt(audio1.currentTime);//秒数
-                        var temp=cur;
-                        minute=parseInt(temp/60);
-                        if(cur%60<10){
-                            timel.innerHTML=""+minute+":0"+cur%60+"";
-                        }else{
-                            timel.innerHTML=""+minute+":"+cur%60+"";
-                        }
-                    },1000);
+		var leftVll=-36
+        var jdtwidth = plength.style;
+        // console.log("jd"+jdtwidth)
+         //调整播放进度
+         
+         dot.addEventListener('touchstart',function(e){
+            
+            clearInterval(timer1)
+            clearInterval(timers)
+            var touch = e.touches[0]
+            a = touch.clientX	//	获取触摸的初始位置
+	        b = parseInt(plength.style.width)	//	此处忽略IE浏览器兼容性
+            
+         },false)
+         dot.addEventListener('touchmove',function(e){
+            clearInterval(timer1)
+            clearInterval(timers)
+            // e.preventDefault()
+            var touch = e.touches[0]
+            // alert('yi')
+            movex = touch.clientX - a	//	通过当前位置与初始位置之差计算改变的距离
+            
+            var lenth=audios[index].duration;
+            var cur=audios[index].currentTime;//获取当前的播放时间
+            jdtwidth.width =alllength/parseFloat(lenth)*parseFloat(cur)+movex+"px";
+         },false)
+         dot.addEventListener('touchend',function(e){
+			 
+            var lenth=audios[index].duration;
+            var changetime=parseInt(lenth/alllength*parseInt(jdtwidth.width))
+            
+           if(changetime<lenth){
+            audios[index].currentTime=""+changetime+"";
+           }else{
+            audios[index].currentTime=""+lenth-1+"";
+           }
+           audios[index].play();
+            jindutiao()
+            // alert('222')
+         },false)
+        //将进度条置0
+        function reducejindutiao(){
+            clearInterval(timer1);
+            
+            plength.style.width="0";
+        }
+        //音乐停止
+        function pauseall(){
+            for (var i=0;i<audios.length;i++) {
+                if(audios[i]){
+                    audios[i].pause();
                 }
-// 				audio1.ontimeupdate = function() {myFunction()};
-// 
-// function myFunction() 
-// {
-//     // 显示 id="demo" 的 p 元素中视频的播放位置 
-//     console.log(audio1.currentTime)
-// }
- players.onclick=function (){
-	  function jindutiao(){
-	 										 	
-	 										 							//获取当前歌曲的歌长
-	 										 							
-	 																	var lenth=audio1.duration;
-	 										 						
-	 										 							timer1=setInterval(function(){
-	 										 								var  cur=audio1.currentTime;//获取当前的播放时间
-	 										 								// alert(cur)
-	 										 								lengths.style.width=parseFloat(boxlenth/lenth)*cur+"px";
-	 										 							},50)
-	 												console.log(audio1.ended)
-													
-	 										 				}
-			if(open==true){
-				players.classList.add('playchange')
-				addtime()
-			audio1.play()
-			jindutiao()
-			open=false
-			return open
-			}else if(open==false){
-				players.classList.remove('playchange')
-				audio1.pause();
-				clearInterval(timer1)
-				clearInterval(timer2)
-				open=true
-				return open
-				
-			}
-			}
-		
-		
-		}
-// 	window.onload=function(){
-// 		players.onclick=onchange
-// 	}
- var swiper = new Swiper('.swiper-container', {
-      
-loop : true,
+            }
+        }
+        //重置总时长的数字显示
+        function playChangeAllnbr(){
+            var lenth=audios[index].duration;
+            
+            var lenth1=parseInt(lenth);
+           
+                var minute1=parseInt(lenth1/60);
+                if(lenth1%60<10){
+                    time_r.innerHTML=minute1+":0"+lenth1%60+"";
+                }else{
+                    time_r.innerHTML=minute1+":"+lenth1%60+"";
+                }
+        }
+        //将cd重置 并旋转
+        function playChangeCd(){
+            if(cd.style.transform!=="0deg"){
+                deg=0;
+            }
+            timercd=setInterval(function(){
+                cd.style.transform="rotate("+deg+"deg)";
+                deg+=0.1;
+                if(deg>360){
+                    deg=0;
+                }
+            },1)
+        }
+		function changCdr(){
+			clearInterval(cdtime)
 
-	pagination: '.swiper-pagination',
-	effect: 'coverflow',
-	grabCursor: true,
-	 slidesPerView: 3,
-	centeredSlides: true,
-	nextButton: '.swiper-button-next',
-	prevButton: '.swiper-button-prev',
-	slidesPerView: 'auto',
-	coverflowEffect: {
-		rotate: 0,// 旋转的角度
-		stretch: -30,// 拉伸   图片间左右的间距和密集度
-		depth:200,// 深度   切换图片间上下的间距和密集度
-		modifier: 2,// 修正值 该值越大前面的效果越明显
-		slideShadows : false,// 页面阴影效果
+			var cdtime=setInterval(function(){
+				cd.style.left=""+leftVl+"%";
+				leftVl-=1.5
+				if(leftVl<36){
+					pdlefcdr()
+					clearInterval(cdtime)
+				}
+			},0)
+			if(leftVl<36){
+				// alert("00")
+				pdlefcdr()
+				// clearInterval(cdtime)
+			}
+		}
+		function pdlefcdr(){
+			// alert("s")
+
+			var cdtimer=setInterval(function(){
+				cd.style.left=""+leftVl+"%";
+				leftVl-=1.5
+				cdr.style.left=""+leftVlr+"%";
+				leftVlr-=1.5
+				if(parseInt(leftVlr)==50){
+					clearInterval(timercd)
+					playChangeCd();//重置cd 并重新旋转
+					var imgvl=audios[index].getAttribute('imgvl')
+					cdimg.setAttribute("src",imgvl)
+					leftVl=50
+					leftVlr=136
+					
+					cd.style.left="50%"
+					cdr.style.left='136%'
+					clearInterval(cdtimer)
+					
+				}
+			},0)
+		}
+		function changCdl(){
+					clearInterval(cdtime)
 		
-	},
-	pagination: {
-	        el: '.swiper-pagination',
-	        clickable: true,
-					type: 'fraction',
-	      },
-      autoplay: {//自动播放
-        delay: 3500,
-        disableOnInteraction: false,
-      },
-    });
+					var cdtime=setInterval(function(){
+						cd.style.left=""+leftVl+"%";
+						leftVl+=1.5
+						if(leftVl>64){
+							pdlefcdl()
+							clearInterval(cdtime)
+						}
+					},0)
+				}
+		function pdlefcdl(){
+			// alert("s")l
+
+			var cdtimer=setInterval(function(){
+				cd.style.left=""+leftVl+"%";
+				leftVl+=1.5
+				cdl.style.left=""+leftVll+"%";
+				leftVll+=1.5
+				if(leftVll>49){
+					// alert('ss')
+					clearInterval(timercd)
+					playChangeCd();//重置cd 并重新旋转
+					var imgvl=audios[index].getAttribute('imgvl')
+					cdimg.setAttribute("src",imgvl)
+					leftVl=50
+					leftVll=-36
+					
+					cd.style.left="50%"
+					cdl.style.left='-36%'
+					clearInterval(cdtimer)
+					
+				}
+			},0)
+		}
+        function qingkong(){//清空所有的计时器 并重新更新歌曲时长
+            clearInterval(timer);
+            clearInterval(timer1);
+            clearInterval(timer2);
+            timer2=setInterval(function(){
+                var cur=parseInt(audios[index].currentTime);//秒数
+                  var temp=cur;
+                 var minute=parseInt(temp/60);
+                  if(cur%60<10){
+                      time_l.innerHTML=""+minute+":0"+cur%60+"";
+                  }else{
+                      time_l.innerHTML=""+minute+":"+cur%60+"";
+                  }
+              },1000);
+        }
+        //上一曲
+        function bef(){
+			var indexl=index-1
+				if(indexl==-1){
+								indexl=audios.length-1
+								}
+			
+			var imgvl=audios[indexl].getAttribute('imgvl')
+			cdimgl.setAttribute("src",imgvl)
+			
+            clearInterval(timercd)
+            clearInterval(timer)
+            // playChangeCd();//重置cd 并重新旋转
+            qingkong();
+			needle.classList.remove('needled')
+            index--;
+            reducejindutiao();
+            pauseall();
+            if(index==-1){
+                index=audios.length-1;
+            }
+            playChangeAllnbr();
+            audios[index].currentTime=0//恢复从0开始播放
+            
+            jindutiao();
+            var audioName=audios[index].getAttribute('name')
+            var navs = document.getElementsByTagName('title')[0]
+            navs.innerHTML=audioName
+				changCdl()
+            console.log(navs)
+			setTimeout(function(){
+				needle.classList.add('needled')
+				var playPromise;
+				
+								playPromise = audios[index].play();
+				if (playPromise) {
+				                playPromise.then(() => {
+				                    // 音频加载成功
+				                    // 音频的播放需要耗时
+				                    setTimeout(() => {
+				                        // 后续操作
+
+				                    }, audios[index].duration*1); // audio.duration 为音频的时长单位为秒
+				
+				
+				                }).catch((e) => {
+									alert('加载失败请重试')
+				                    audios[index].load()
+									audios[index].paly()
+									if(audios[index].paused==true){audios[index].paly()}
+				                });
+				}
+				
+			},600)
+        }
+        //下一曲
+        function next(){
+			var indexr=index+1
+				if(indexr==audios.length){
+					indexr=0
+					}
+			var imgvl=audios[indexr].getAttribute('imgvl')
+			cdimgr.setAttribute("src",imgvl)
+			needle.classList.remove('needled')
+			changCdr()
+            clearInterval(timercd)
+            clearInterval(timer)
+            
+            qingkong();
+            index++;
+            reducejindutiao();
+            pauseall();
+            if(index==audios.length){
+                index=0;
+            }
+			
+            playChangeAllnbr();
+            audios[index].currentTime=0//恢复从0开始播放
+			console.log("现在的索引"+index)
+            
+			
+            jindutiao();
+            var audioName=audios[index].getAttribute('name')
+			// var imgvl=audios[index].getAttribute('imgvl')
+            var navs = document.getElementsByTagName('title')[0]
+            navs.innerHTML=audioName
+			setTimeout(function(){
+				needle.classList.add('needled')
+				
+				var playPromise;
+
+				playPromise = audios[index].play();
+				if (playPromise) {
+				                playPromise.then(() => {
+				                    // 音频加载成功
+				                    // 音频的播放需要耗时
+				                    setTimeout(() => {
+				                        // 后续操作
+				                    }, audios[index].duration); // audio.duration 为音频的时长单位为秒
+				
+				
+				                }).catch((e) => {
+				                    // 音频加载失败
+									alert('加载失败请重试')
+									audios[index].load()
+									audios[index].paly()
+									if(audios[index].paused==true){audios[index].paly()}
+				                });
+								}
+				
+			},600)
+            console.log(navs)
+        }
+        //播放进度
+        function jindutiao(){
+            //获取当前歌曲的歌长
+            // alert('wohsijindut')
+            var lenth=audios[index].duration;
+            var lenth1=parseInt(lenth);
+           
+                var minute1=parseInt(lenth1/60);
+                if(lenth1%60<10){
+                    time_r.innerHTML=minute1+":0"+lenth1%60+"";
+                }else{
+                    time_r.innerHTML=minute1+":"+lenth1%60+"";
+                }
+                
+            timer1=setInterval(function(){
+              var cur=audios[index].currentTime;//获取当前的播放时间
+              plength.style.width=alllength/parseFloat(lenth)*parseFloat(cur)+"px";
+            },50)
+        }
+        
+          function playChange(){
+            
+            function addtime(){
+                
+                timer2=setInterval(function(){
+                  var cur=parseInt(audios[index].currentTime);//秒数
+                    var temp=cur;
+                   var minute=parseInt(temp/60);
+                    if(cur%60<10){
+                        time_l.innerHTML=""+minute+":0"+cur%60+"";
+                    }else{
+                        time_l.innerHTML=""+minute+":"+cur%60+"";
+                    }
+                },1000);
+                
+            }
+            //点击播放
+        function start(){    
+         timer=setInterval(function(){
+            cd.style.transform="rotate("+deg+"deg)";
+            deg+=0.1;
+            if(deg>360){
+                deg=0;
+            }
+        },1)
+        play.classList.remove('btn-stop')
+        
+        needle.classList.add('needled')
+        var pms=audios[index].play()
+		if(pms){
+						pms.then(() => {
+							// 音频加载成功
+							// 音频的播放需要耗时
+							setTimeout(() => {
+								// 后续操作
+								
+							}, audios[index].duration); // audio.duration 为音频的时长单位为秒
+		
+		
+						}).catch((e) => {
+							// 音频加载失败
+							alert('加载失败请重试')
+							audios[index].load()
+							audios[index].paly()
+							if(audios[index].paused==true){audios[index].paly()}
+						});
+						}
+        open =false
+    return timer,open
+    }
+    //暂停
+        function stop(){
+            // var start = start()
+                clearInterval(timer)
+                clearInterval(timercd)
+                clearInterval(timer1)
+                clearInterval(timer2)
+                open = true
+                play.classList.add('btn-stop')
+                needle.classList.remove('needled')
+                audios[index].pause();
+        }
+        
+            if(open){
+				
+                start()
+                jindutiao() 
+                addtime()
+               
+            }else if(open==false){
+                stop()
+            }
+        
+    }
+
+    play.onclick=playChange
+    nextbtn.onclick=next
+    prevbtn.onclick=bef
+	
+    function begin(){
+        playChange()
+    }
+	begin()
+var audioName=audios[index].getAttribute('name')
+var navs = document.getElementsByTagName('title')[0]
+            navs.innerHTML=audioName
+    
+}
 </script>
 
 	</body>
-
 </html>
