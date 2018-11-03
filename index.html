@@ -369,12 +369,29 @@
 				
 				
 				                }).catch((e) => {
-									autoPlayAudio();
-				                    audios[index].load()
-									audios[index].paly()
-									if(audios[index].paused==true){audios[index].paly()}
-				                });
-				}
+						var acttime=setInterval(function(){
+								if(audios[index].paused==true||isNaN(time_r.innerHTML)==true){
+								audios[index].paused=false;
+								audios[index].play();
+								clearInterval(timer1)
+								jindutiao()
+								
+								autoPlayAudio();
+
+					document.addEventListener("WeixinJSBridgeReady", function () {
+						alert('222')
+　　　　audios[index].play();
+　　}, false);
+　　document.addEventListener('YixinJSBridgeReady', function() {//易信
+　　　　audios[index].play();
+　　}, false);
+
+
+								}else{
+									clearInterval(acttime)
+								}
+							},500)
+						});	
 				
 			},600)
         }
@@ -426,12 +443,30 @@
 				
 				                }).catch((e) => {
 				                    // 音频加载失败
-									autoPlayAudio();
-									audios[index].load()
-									audios[index].paly()
-									if(audios[index].paused==true){audios[index].play()}
-				                });
+							
+							var acttime=setInterval(function(){
+								if(audios[index].paused==true||isNaN(time_r.innerHTML)==true){
+								audios[index].paused=false;
+								audios[index].play();
+								clearInterval(timer1)
+								jindutiao()
+								
+								autoPlayAudio();
+
+					document.addEventListener("WeixinJSBridgeReady", function () {
+						alert('222')
+　　　　audios[index].play();
+　　}, false);
+　　document.addEventListener('YixinJSBridgeReady', function() {//易信
+　　　　audios[index].play();
+　　}, false);
+
+
+								}else{
+									clearInterval(acttime)
 								}
+							},500)
+						});		
 				
 			},600)
             console.log(navs)
@@ -501,11 +536,12 @@
 							
 							var acttime=setInterval(function(){
 								if(audios[index].paused==true||isNaN(time_r.innerHTML)==true){
+								audios[index].paused=false;
 								audios[index].play();
 								clearInterval(timer1)
 								jindutiao()
 								
-autoPlayAudio();
+								autoPlayAudio();
 
 					document.addEventListener("WeixinJSBridgeReady", function () {
 						alert('222')
