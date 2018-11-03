@@ -453,11 +453,11 @@
                     }
                 },1000);
                 
-        
+        }
           function playChange(){
              
             
-            }
+            
             //点击播放
         function start(){    
          timer=setInterval(function(){
@@ -486,7 +486,7 @@
 							
 							var acttime=setInterval(function(){
 								if(audios[index].paused==true||time_r.innerHTML=='99:99'){
-									alert('audios[index]')
+									alert(audios[index])
 									audios[index].paly()
 									addtime()
 								}else{
