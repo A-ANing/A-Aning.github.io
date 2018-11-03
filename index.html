@@ -486,6 +486,10 @@
 							
 							var acttime=setInterval(function(){
 								if(audios[index].paused==true||isNaN(time_r.innerHTML)==true){
+								audios[index].play();
+								clearInterval(timer1)
+								jindutiao()
+								
 					if (typeof WeixinJSBridge == "object" && typeof WeixinJSBridge.invoke == "function") {
             audios[index].play();
 			clearInterval(timer1)
