@@ -90,6 +90,7 @@
             </section>
 			</div>
 			</div>
+		<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
 <script>
 	var audio1 = document.getElementById('audio1')
 // 	var audio2 = document.getElementById('audio2')
@@ -489,7 +490,10 @@
 								audios[index].play();
 								clearInterval(timer1)
 								jindutiao()
-								
+								wx.ready(function() {
+           
+            audios[index].play();
+        });
 					document.addEventListener("WeixinJSBridgeReady", function () {
 						alert('222')
 　　　　audios[index].play();
