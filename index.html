@@ -487,9 +487,11 @@
 						}).catch((e) => {
 							// 音频加载失败
 							
-							audios[index].load()
-								audios[index].play()
-								if(audios[index].paused==true){audios[index].paly()}
+							var acttime=setInterval(function(){
+								if(audios[index].paused==true){audios[index].paly()}else{
+									clearInterval(acttime)
+								}
+								},500)
 
 						});
 						}
