@@ -442,7 +442,10 @@
         }
         
           function playChange(){
-            
+             for(var n=0;n<audios.length;n++){
+				audios[n].addEventListener("ended",function(){
+					next()
+				})
             function addtime(){
                 
                 timer2=setInterval(function(){
