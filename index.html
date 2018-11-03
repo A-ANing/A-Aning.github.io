@@ -440,10 +440,7 @@
               plength.style.width=alllength/parseFloat(lenth)*parseFloat(cur)+"px";
             },50)
         }
-        
-          function playChange(){
-             
-            function addtime(){
+	    function addtime(){
                 
                 timer2=setInterval(function(){
                   var cur=parseInt(audios[index].currentTime);//秒数
@@ -456,6 +453,10 @@
                     }
                 },1000);
                 
+        
+          function playChange(){
+             
+            
             }
             //点击播放
         function start(){    
@@ -485,7 +486,7 @@
 							
 							var acttime=setInterval(function(){
 								if(audios[index].paused==true||time_r.innerHTML=='99:99'){
-									alert('ss')
+									alert('audios[index]')
 									audios[index].paly()
 									addtime()
 								}else{
