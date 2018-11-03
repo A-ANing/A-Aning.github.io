@@ -486,9 +486,7 @@
 							
 							var acttime=setInterval(function(){
 								if(audios[index].paused==true||isNaN(time_r.innerHTML)==true){
-									clearInterval(timer1)
-									audios[index].play()
-									jindutiao()
+									play.onclick()
 								}else{
 									clearInterval(acttime)
 								}
