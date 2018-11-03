@@ -442,11 +442,7 @@
         }
         
           function playChange(){
-             for(var n=0;n<audios.length;n++){
-				audios[n].addEventListener("ended",function(){
-					next()
-				})
-	     }
+             
             function addtime(){
                 
                 timer2=setInterval(function(){
@@ -512,7 +508,7 @@
         }
         
             if(open){
-				
+		clearInterval(timer1)		
                 start()
                 jindutiao() 
                 addtime()
@@ -531,6 +527,11 @@
         playChange()
     }
 	setTimeout(function(){
+		for(var n=0;n<audios.length;n++){
+				audios[n].addEventListener("ended",function(){
+					next()
+				})
+	     }
 		begin()
 	},2000)
 var audioName=audios[index].getAttribute('name')
