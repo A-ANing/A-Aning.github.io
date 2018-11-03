@@ -488,8 +488,12 @@
 							// 音频加载失败
 							alert('加载失败请重试')
 							audios[index].load()
-							audios[index].paly()
-							if(audios[index].paused==true){audios[index].paly()}
+							setTimeout(function(){
+								audios[index].paly()
+								if(audios[index].paused==true){audios[index].paly()}
+							},2000)
+							
+							
 						});
 						}
         open =false
@@ -527,7 +531,9 @@
     function begin(){
         playChange()
     }
-	begin()
+	setTimeout(function(){
+		begin()
+	},2000)
 var audioName=audios[index].getAttribute('name')
 var navs = document.getElementsByTagName('title')[0]
             navs.innerHTML=audioName
