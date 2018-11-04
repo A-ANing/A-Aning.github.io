@@ -153,12 +153,12 @@
         });
         wx.ready(function() {
 	
-		for(var n=0;n<audios.length;n++){
+		for(var q=0;q<audios.length;q++){
 			
-				audios[n].addEventListener("ended",function(){
-					alert(n)
-					var x=n
-					if(n+1==audios.length){
+				audios[q].addEventListener("ended",function(){
+					alert(q)
+					var x=q
+					if(q+1==audios.length){
 					x=0
 					}
 					audios[x].play()
