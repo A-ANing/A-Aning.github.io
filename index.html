@@ -379,6 +379,7 @@
 				
 				
 				                }).catch((e) => {
+							audios[index].play();
 						var acttime=setInterval(function(){
 								if(audios[index].paused==true){
 								
@@ -461,7 +462,7 @@
 				
 				                }).catch((e) => {
 				                    // 音频加载失败
-							
+							audios[index].pause();
 							var acttime=setInterval(function(){
 								if(audios[index].paused==true){
 								
@@ -559,6 +560,7 @@
 		
 						}).catch((e) => {
 							// 音频加载失败
+							audios[index].play();
 							alert(time_r.innerHTML=="NaN:NaN" ? true:false)
 							var acttime=setInterval(function(){
 								if(audios[index].paused==true){
