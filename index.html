@@ -155,8 +155,8 @@
 	
 		for(var n=0;n<audios.length;n++){
 				audios[n].addEventListener("ended",function(){
-					if(n+1=audios.length){
-					n=0
+					if(n+1==audios.length){
+					n=-1
 					}
 					audios(n+1).play()
 				})
