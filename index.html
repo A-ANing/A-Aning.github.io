@@ -153,19 +153,14 @@
         });
         wx.ready(function() {
 	
-		for(var q=0;q<audios.length;q++){
+		
 			
-				audios[q].addEventListener("ended",function(){
-					
-					 index++;
+				audios[0].addEventListener("ended",function(){
 
-            if(index==audios.length){
-                index=0;
-            }
-					audios[index].currentTime=0
-					audios[index].play()
+					
+					audios[1].play()
 				})
-	     }
+	    
 		
             audios[index].play();
         });
