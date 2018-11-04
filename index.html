@@ -141,7 +141,7 @@
 		var leftVll=-36
         var jdtwidth = plength.style;
         // console.log("jd"+jdtwidth)
-	    function autoPlayAudio() {
+	    function autoPlayAudio(o) {
         wx.config({
             // 配置信息, 即使不正确也能使用 wx.ready
             debug: false,
@@ -152,10 +152,8 @@
             jsApiList: []
         });
         wx.ready(function() {
-		for(var o=0;o<audios.length;0++){
-			audios[o].play();
-		}
-            audios[index].play();
+	
+            audios[o].play();
         });
 };
          //调整播放进度
@@ -388,7 +386,7 @@
 								audios[index].load()
 								audios[index].play();
 								
-								autoPlayAudio();
+								autoPlayAudio(o=index);
 
 					document.addEventListener("WeixinJSBridgeReady", function () {
 						alert('222')
@@ -473,7 +471,7 @@
 									audios[index].pause();
 								audios[index].play();
 								
-								autoPlayAudio();
+								autoPlayAudio(o=index);
 
 					document.addEventListener("WeixinJSBridgeReady", function () {
 						alert('222')
@@ -572,7 +570,7 @@
 								audios[index].load()
 								audios[index].play();
 								
-								autoPlayAudio();
+								autoPlayAudio(o=index);
 
 					document.addEventListener("WeixinJSBridgeReady", function () {
 						alert('222')
