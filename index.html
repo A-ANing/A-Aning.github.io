@@ -556,11 +556,11 @@
 							// 音频加载失败
 							alert(time_r.innerHTML=="NaN:NaN" ? true:false)
 							var acttime=setInterval(function(){
-								if(audios[index].paused==true||time_r.innerHTML=="NaN:NaN"){
-								clearInterval(timer1)
-								jindutiao()
+								if(audios[index].paused==true){
+								
 								audios[index].load()
 								audios[index].play();
+								
 								autoPlayAudio();
 
 					document.addEventListener("WeixinJSBridgeReady", function () {
@@ -576,7 +576,14 @@
 									clearInterval(acttime)
 								}
 							},500)
-
+							var acttimed=setInterval(function(){
+							if(time_r.innerHTML=="NaN:NaN"){
+								clearInterval(timer1)
+								jindutiao()
+								}else{
+									clearInterval(acttime)
+								}
+							},500)
 						});
 						}
         open =false
