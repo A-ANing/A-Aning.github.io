@@ -152,7 +152,7 @@
             jsApiList: []
         });
         wx.ready(function() {
-		audios[index].load();
+		
             audios[index].play();
         });
 };
@@ -550,11 +550,8 @@
 							// 音频加载失败
 							
 							var acttime=setInterval(function(){
-								if(audios[index].paused==true||time_r.innerHTML=="NaN:NaN"){
-								
+								if(audios[index].paused==true){
 								audios[index].play();
-								
-								
 								autoPlayAudio();
 
 					document.addEventListener("WeixinJSBridgeReady", function () {
