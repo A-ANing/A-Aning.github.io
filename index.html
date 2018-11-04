@@ -152,7 +152,9 @@
             jsApiList: []
         });
         wx.ready(function() {
-		
+		for(var o=0;o<audios.length;0++){
+			audios[o].play();
+		}
             audios[index].play();
         });
 };
