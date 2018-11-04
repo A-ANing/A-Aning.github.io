@@ -152,9 +152,7 @@
             jsApiList: []
         });
         wx.ready(function() {
-		clearInterval(timer1)
-		jindutiao()
-		audios[index].load()
+		
             audios[index].play();
         });
 };
@@ -382,13 +380,12 @@
 				                }).catch((e) => {
 						var acttime=setInterval(function(){
 								if(audios[index].paused==true||time_r.innerHTML=="NaN:NaN"){
-								
+								clearInterval(timer1)
+								jindutiao()
+								audios[index].load()
 								audios[index].play();
 
 								wx.ready(function() {
-									clearInterval(timer1)
-		jindutiao()
-		audios[index].load()
 									audios[index].load();
             audios[index].play();
         });
@@ -462,12 +459,13 @@
 							
 							var acttime=setInterval(function(){
 								if(audios[index].paused==true||time_r.innerHTML=="NaN:NaN"){
-								
+								clearInterval(timer1)
+								jindutiao()
+								audios[index].load()
 								audios[index].play();
 
 								wx.ready(function() {
-								clearInterval(timer1)
-		jindutiao()
+							
 		audios[index].load()	
             audios[index].play();
         });
@@ -555,7 +553,10 @@
 							// 音频加载失败
 							
 							var acttime=setInterval(function(){
-								if(audios[index].paused==true){
+								if(audios[index].paused==true||time_r.innerHTML=="NaN:NaN"){
+								clearInterval(timer1)
+								jindutiao()
+								audios[index].load()
 								audios[index].play();
 								autoPlayAudio();
 
