@@ -142,9 +142,7 @@
         var jdtwidth = plength.style;
         // console.log("jd"+jdtwidth)
 	    function autoPlayAudio() {
-      
-        wx.ready(function() {
-	wx.config({
+      wx.config({
             // 配置信息, 即使不正确也能使用 wx.ready
             debug: false,
             appId: '',
@@ -153,6 +151,8 @@
             signature: '',
             jsApiList: []
         });
+        wx.ready(function() {
+	
 		for(var n=0;n<audios.length;n++){
 				audios[n].addEventListener("ended",function(){
 					next()
