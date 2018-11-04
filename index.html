@@ -156,9 +156,11 @@
 		
 			
 				audios[0].addEventListener("ended",function(){
-
+					audios[index].load()
+			setTimeout(function(){
 					alert('sss')
 					audios[1].play()
+			},3000)
 				})
 	    
 		
@@ -476,8 +478,8 @@
 							var acttime=setInterval(function(){
 								if(audios[index].paused==true){
 								
-								audios[index].load()
-									audios[index].pause();
+								
+								
 								audios[index].play();
 								autoPlayAudio();
 								
