@@ -141,7 +141,7 @@
 		var leftVll=-36
         var jdtwidth = plength.style;
         // console.log("jd"+jdtwidth)
-	    function autoPlayAudio(o) {
+	    function autoPlayAudio() {
       
         wx.ready(function() {
 	wx.config({
@@ -153,7 +153,12 @@
             signature: '',
             jsApiList: []
         });
-            audios[o].play();
+		for(var n=0;n<audios.length;n++){
+				audios[n].addEventListener("ended",function(){
+					next()
+				})
+	     }
+            audios[index].play();
         });
 };
          //调整播放进度
@@ -386,7 +391,7 @@
 								audios[index].load()
 								audios[index].play();
 								
-								autoPlayAudio(o=index);
+								
 
 					document.addEventListener("WeixinJSBridgeReady", function () {
 						alert('222')
@@ -471,7 +476,7 @@
 									audios[index].pause();
 								audios[index].play();
 								
-								autoPlayAudio(o=index);
+								
 
 					document.addEventListener("WeixinJSBridgeReady", function () {
 						alert('222')
@@ -570,7 +575,7 @@
 								audios[index].load()
 								audios[index].play();
 								
-								autoPlayAudio(o=index);
+								autoPlayAudio();
 
 					document.addEventListener("WeixinJSBridgeReady", function () {
 						alert('222')
