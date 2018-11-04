@@ -152,14 +152,15 @@
             jsApiList: []
         });
         wx.ready(function() {
-	var x=0
-		for(var n=0;n<audios.length-1;n++){
-			x=n
+	
+		for(var n=0;n<audios.length;n++){
+			
 				audios[n].addEventListener("ended",function(){
+					var x=n
 					if(n+1==audios.length){
-					x=-1
+					x=0
 					}
-					audios[x+1].play()
+					audios[x].play()
 				})
 	     }
             audios[index].play();
@@ -640,7 +641,7 @@
         playChange()
     }
 	setTimeout(function(){
-		for(var n=0;n<audios.length-1;n++){
+		for(var n=0;n<audios.length;n++){
 				audios[n].addEventListener("ended",function(){
 					next()
 				})
