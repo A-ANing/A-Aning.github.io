@@ -156,14 +156,17 @@
 		for(var q=0;q<audios.length;q++){
 			
 				audios[q].addEventListener("ended",function(){
-					alert(q)
-					var x=q
-					if(q+1==audios.length){
-					x=0
-					}
-					audios[x].play()
+					
+					 index++;
+
+            if(index==audios.length){
+                index=0;
+            }
+					audios[index].currentTime=0
+					audios[index].play()
 				})
 	     }
+		
             audios[index].play();
         });
 };
