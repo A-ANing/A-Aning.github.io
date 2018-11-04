@@ -584,7 +584,7 @@
 								autoPlayAudio();
 
 					document.addEventListener("WeixinJSBridgeReady", function () {
-						alert('222')
+						
 　　　　audios[index].play();
 　　}, false);
 　　document.addEventListener('YixinJSBridgeReady', function() {//易信
@@ -644,7 +644,7 @@
 	setTimeout(function(){
 		for(var n=0;n<audios.length;n++){
 				audios[n].addEventListener("ended",function(){
-					alert("n"+n)
+					
 					next()
 				})
 	     }
