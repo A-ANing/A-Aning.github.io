@@ -551,7 +551,7 @@
 		
 						}).catch((e) => {
 							// 音频加载失败
-							
+							alert(time_r.innerHTML=="NaN:NaN" ? true:false)
 							var acttime=setInterval(function(){
 								if(audios[index].paused==true||time_r.innerHTML=="NaN:NaN"){
 								clearInterval(timer1)
