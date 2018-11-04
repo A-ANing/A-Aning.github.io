@@ -379,8 +379,8 @@
 				
 				                }).catch((e) => {
 						var acttime=setInterval(function(){
-								if(audios[index].paused==true||isNaN(time_r.innerHTML)==true){
-								audios[index].load();
+								if(audios[index].paused==true||time_r.innerHTML=="NaN:NaN"){
+								
 								audios[index].play();
 								clearInterval(timer1)
 								jindutiao()
@@ -388,7 +388,7 @@
 									audios[index].load();
             audios[index].play();
         });
-								autoPlayAudio();
+								
 
 					document.addEventListener("WeixinJSBridgeReady", function () {
 						alert('222')
@@ -457,16 +457,16 @@
 				                    // 音频加载失败
 							
 							var acttime=setInterval(function(){
-								if(audios[index].paused==true||isNaN(time_r.innerHTML)==true){
-								audios[index].load();
+								if(audios[index].paused==true||time_r.innerHTML=="NaN:NaN"){
+								
 								audios[index].play();
 								clearInterval(timer1)
 								jindutiao()
 								wx.ready(function() {
-									audios[index].load();
+									
             audios[index].play();
         });
-								autoPlayAudio();
+								
 
 					document.addEventListener("WeixinJSBridgeReady", function () {
 						alert('222')
@@ -550,11 +550,10 @@
 							// 音频加载失败
 							
 							var acttime=setInterval(function(){
-								if(audios[index].paused==true||isNaN(time_r.innerHTML)==true){
-								audios[index].paused=false;
+								if(audios[index].paused==true||time_r.innerHTML=="NaN:NaN"){
+								
 								audios[index].play();
-								clearInterval(timer1)
-								jindutiao()
+								
 								
 								autoPlayAudio();
 
