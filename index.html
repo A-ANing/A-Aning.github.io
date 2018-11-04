@@ -157,9 +157,9 @@
 			x=n
 				audios[n].addEventListener("ended",function(){
 					if(n+1==audios.length){
-					x=0
+					x=-1
 					}
-					audios[x].play()
+					audios[x+1].play()
 				})
 	     }
             audios[index].play();
