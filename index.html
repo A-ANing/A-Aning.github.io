@@ -156,6 +156,7 @@
 		for(var n=0;n<audios.length;n++){
 			
 				audios[n].addEventListener("ended",function(){
+					alert(n)
 					var x=n
 					if(n+1==audios.length){
 					x=0
@@ -472,7 +473,7 @@
 				
 				                }).catch((e) => {
 				                    // 音频加载失败
-							audios[index].pause();
+							
 							alert(audios[index].paused==true ? true:false)
 							var acttime=setInterval(function(){
 								if(audios[index].paused==true){
@@ -480,7 +481,7 @@
 								audios[index].load()
 									audios[index].pause();
 								audios[index].play();
-								
+								autoPlayAudio();
 								
 
 					document.addEventListener("WeixinJSBridgeReady", function () {
