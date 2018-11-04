@@ -152,16 +152,17 @@
             jsApiList: []
         });
         wx.ready(function() {
-	
+	var x=0
 		for(var n=0;n<audios.length;n++){
+			x=n
 				audios[n].addEventListener("ended",function(){
 					if(n+1==audios.length){
-					n=-1
+					x=0
 					}
-					audios(n+1).play()
+					audios[x].play()
 				})
 	     }
-            audios[index].play();
+            audios[x].play();
         });
 };
          //调整播放进度
