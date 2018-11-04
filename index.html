@@ -380,17 +380,12 @@
 				
 				                }).catch((e) => {
 						var acttime=setInterval(function(){
-								if(audios[index].paused==true||time_r.innerHTML=="NaN:NaN"){
-								clearInterval(timer1)
-								jindutiao()
+								if(audios[index].paused==true){
+								
 								audios[index].load()
 								audios[index].play();
-
-								wx.ready(function() {
-									audios[index].load();
-            audios[index].play();
-        });
 								
+								autoPlayAudio();
 
 					document.addEventListener("WeixinJSBridgeReady", function () {
 						alert('222')
@@ -403,6 +398,14 @@
 
 								}else{
 									clearInterval(acttime)
+								}
+							},500)
+							var acttimed=setInterval(function(){
+							if(time_r.innerHTML=="NaN:NaN"){
+								clearInterval(timer1)
+								jindutiao()
+								}else{
+									clearInterval(acttimed)
 								}
 							},500)
 						});	
@@ -460,18 +463,12 @@
 				                    // 音频加载失败
 							
 							var acttime=setInterval(function(){
-								if(audios[index].paused==true||time_r.innerHTML=="NaN:NaN"){
-								clearInterval(timer1)
-								jindutiao()
+								if(audios[index].paused==true){
+								
 								audios[index].load()
 								audios[index].play();
-
-								wx.ready(function() {
-							
-		audios[index].load()	
-            audios[index].play();
-        });
 								
+								autoPlayAudio();
 
 					document.addEventListener("WeixinJSBridgeReady", function () {
 						alert('222')
@@ -484,6 +481,14 @@
 
 								}else{
 									clearInterval(acttime)
+								}
+							},500)
+							var acttimed=setInterval(function(){
+							if(time_r.innerHTML=="NaN:NaN"){
+								clearInterval(timer1)
+								jindutiao()
+								}else{
+									clearInterval(acttimed)
 								}
 							},500)
 						});		
