@@ -1,0 +1,863 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+<title>无盘官网</title>
+<meta name="keywords" content="" />
+<meta name="description" content="">
+<link rel="stylesheet" href="css/swiper.min.css">
+<link rel="stylesheet" type="text/css" href="css/animate.min.css"/>
+
+<link rel="stylesheet" type="text/css" href="css/index/index.css"/>
+<link rel="stylesheet" type="text/css" href="js/layui/css/layui.css"/>
+<style>
+html,body{/* position:relative; */height:100%;font-size: 100px;}
+body{background:#f5f5f6;font-family:Helvetica Neue,Helvetica,Arial,sans-serif;font-size:14px;color:#000;margin:0;padding:0;}
+input[type="text"], input[type="password"], input[type="button"], textarea { outline-style:none; -webkit-appearance:none;}
+.swiper-container{width:100%;height:100%;position: absolute;}
+.swiper-slide{text-align:center;font-size:18px;display:-webkit-box;display:-ms-flexbox;display:-webkit-flex;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;-webkit-align-items:center;align-items:center;}
+.swiper-wrapper{ width:100%;height:100%;overflow:visible;transition:transform 1s cubic-bezier(0.86,0,0.03,1);-webkit-transition:-webkit-transform 1s cubic-bezier(0.86,0,0.03,1);}
+
+/*section-1底部导航*/
+#s1{
+	background: url(img/index/bkimg.png) no-repeat;
+	background-size: 100% 100%;
+	position: relative;
+}
+#s1_1{
+	background: url(img/index/home2_02.png) no-repeat;
+	background-size: 100% 100%;
+	position: relative;
+}
+#s1 .top_words{
+	font-size: 0.55rem;
+	color: #fff;
+	position: absolute;
+	top: 0.80rem;
+}
+#s1 .comp1{
+	bottom: -4%;
+	position: relative;
+	/* left:-10%; */
+	/* margin-left: -354.5px; */
+}
+#s1 .comp2{
+	    bottom: -14px;
+    position: absolute;
+    right: -39%;
+    z-index: 100;
+	
+}
+#s1 .comp2 img{
+	width: 5.57rem;
+	height: 3.58rem;
+}
+#s1 .comp1 .comp1Img{
+	width: 6.95rem;
+	height: 5.55rem;
+	    position: relative;
+	z-index: 99;
+}
+#s1 .comp2 .comp2Img{
+	width: 5.57rem;
+	height: 3.35rem;
+}
+#s2 {
+	position: relative;
+	
+}
+
+
+/*底部按钮*/
+.swiper-button-next {width: 32px; height: 47px; position: fixed; top: 98%; left: 48%; z-index: 500; border: 0; cursor:pointer; }
+.next-but-arraw { width: 200px; height:14px; margin: 0 auto; animation: up-fade 1s ease 0s infinite; -moz-animation: up-fade 1s ease 0s infinite; -ms-animation: up-fade 1s ease 0s infinite; -o-animation: up-fade 1s ease 0s infinite; -webkit-animation: up-fade 1s ease 0s infinite;}
+@keyframes up-fade {
+	0% { opacity: 1 }
+	100% { -webkit-transform: translate3d(0px, -6px, 0); opacity: 0.6 }
+}
+@-ms-keyframes up-fade {
+	0% { opacity: 1 }
+	100% { -webkit-transform: translate3d(0px, -6px, 0); opacity: 0.6 }
+}
+@-o-keyframes up-fade {
+	0% { opacity: 1 }
+	100% { -webkit-transform: translate3d(0px, -6px, 0); opacity: 0.6 }
+}
+@-moz-keyframes up-fade {
+	0% { opacity: 1 }
+	100% { -webkit-transform: translate3d(0px, -6px, 0); opacity: 0.6 }
+}
+@-webkit-keyframes up-fade {
+	0% { opacity: 1 }
+	100% { -webkit-transform: translate3d(0px, -6px, 0); opacity: 0.6 }
+}
+@-webkit-keyframes Compu_8{0%{ opacity:0.2;}50% {opacity:1; }100%{ opacity:0.2;}}
+@-moz-keyframes Compu_8{0%{ opacity:0.2;}50% {opacity:1; }100%{ opacity:0.2;}}
+.twinkle{animation:Compu_8 ease-in  infinite ;/* nimation-delay:5s;-webkit-animation-delay:5s; */opacity:1;}
+.header{
+	z-index: 999;
+    position: fixed;
+    width: 100%;
+}
+.header .top_color{
+	background-color:#303030;
+	height: 23px;
+	width: 100%;
+}
+.header .container{
+	background-color: #000000;
+	height: 56px;
+	width: 100%;
+	text-align: center;
+	
+}
+.header .header-nav{
+	color: #FFFFFF;
+	display: inline-block;
+	margin-top: -10px;
+	position: relative;
+    top: -10px;
+	
+}
+.header .header-nav ul li{
+	list-style: none;
+	display: inline-block;
+	padding: 0 37px;
+	cursor: pointer;
+}
+.header .header-nav span:hover{
+	color: #29a0f3;
+}
+
+.header .header-logo{
+	display: inline-block;
+	position: relative;
+	top: -20px;
+	background-color: #303030;
+	border-radius: 15px 15px 15px 15px;
+	padding: 10px 10px ;
+	left: -40px;
+	box-shadow: 0px 4px 0px 0px #000000;
+}
+.header-explain{
+	display: inline-block;
+	margin-left: 10px;
+}
+.header-explain a{
+    display: inline-block;
+	border-radius: 25px 25px 25px 25px;
+	text-decoration: none;
+    color: #737272;
+	padding: 8px 35px;
+	border:2px solid #444444;
+	position: relative;
+	top: -10px;
+	margin: 0 10px 0 10px;
+	font-size: 13px;
+	}
+	.swiper-button-next{
+		background-image: none!important;
+	}
+	
+	.swiper-container{
+		height: calc(100% - 79px);
+		padding-top: 79px;
+	}
+	.twinkle{
+		opacity: 0;
+		    box-shadow: 0px 2px 29px 7px #308cf1;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 95;
+	background-color:rgba(16, 104, 179, 0.48);
+	
+	}
+	.left_words{
+		
+		position: absolute;
+    left: -2.37rem;
+    top: 35%
+	}
+	.left_words img,.right_words img{
+		width: 30%;
+	}
+	
+	
+	.right_words{
+	position: absolute;
+    right: -1.85rem;
+    z-index: 999;
+    top: 0;
+	}
+	.left_top_maks{
+		
+		text-align: center;
+		line-height: 81px;
+		    width: 2.39rem;
+		height: 1.51rem;
+		background-color: rgba(203, 219, 226, 0.1);
+		display: -moz-box;  /* Firefox */
+		display: -ms-flexbox;    /* IE10 */
+		display: -webkit-box;    /* Safari */ 
+		display: -webkit-flex;    /* Chrome, WebKit */
+		display: box; 
+		display: flexbox; 
+		display: flex;
+		-webkit-box-align: center;
+		-webkit-align-items: center;
+		align-items: center;
+		justify-content:center;
+	}
+	.left_bottom_maks{
+		
+		position: absolute;
+		top: 0.11rem;
+		right: -0.11rem;
+		    width: 2.39rem;
+    height: 1.51rem;
+		background-color: rgba(203, 219, 226, 0.1);
+	}
+	.right_top_maks{
+		position: absolute;
+		    top: 0;
+    right: 0;
+		width: 2.81rem;
+		height: 1.76rem;
+		background-color: rgba(203, 219, 226, 0.3);
+		display: -moz-box;  /* Firefox */
+		display: -ms-flexbox;    /* IE10 */
+		display: -webkit-box;    /* Safari */ 
+		display: -webkit-flex;    /* Chrome, WebKit */
+		display: box; 
+		display: flexbox; 
+		display: flex;
+		-webkit-box-align: center;
+		-webkit-align-items: center;
+		align-items: center;
+		justify-content:center;
+	}
+	.right_bottom_maks{
+		position: absolute;
+		top: 11px;
+		right: -11px;
+		    width: 2.81rem;
+		height: 1.76rem;
+		background-color: rgba(203, 219, 226, 0.3);
+	}
+		
+	.top_bkimg_box{
+		background: url(img/index/bkpage2_02.png) no-repeat 100% 100%;
+		background-size: 100% 100%;
+		width: 100%;
+		height: 50%;
+		position: absolute;
+		top: 0;
+	}
+	.top_bkimg_bottom_imgBox{
+		position: absolute;
+		bottom: 0;
+		text-align: center;
+		
+		width: 100%;
+	}
+	.top_bkimg_bottom_imgBox span{
+		
+		padding: 0 94px;
+		height: 190px;
+		
+		vertical-align: text-top;
+		display: -moz-box;  /* Firefox */
+		display: -ms-flexbox;    /* IE10 */
+		display: -webkit-box;    /* Safari */ 
+		display: -webkit-flex;    /* Chrome, WebKit */
+		display: box; 
+		display: flexbox; 
+		display: flex;
+		-webkit-box-align: center;
+		-webkit-align-items: center;
+		align-items: center;
+		justify-content:center;
+	}
+	.top_bkimg_bottom_imgBox div:nth-child(1){
+		background-color: #29a0f3;
+	}
+	.top_bkimg_bottom_imgBox div:nth-child(2){
+		background-color: #50b6fd;
+	}
+	.top_bkimg_bottom_imgBox div:nth-child(3){
+		background-color: #29a0f3;
+	}
+	.top_bkimg_bottom_imgBox div{
+		display: inline-block;
+		vertical-align: text-top;
+		
+	}
+	.bottom_downs .boxFather{
+		/* position: absolute; */
+		bottom: 0;
+		text-align: center;
+		width: 100%;
+	}
+	.bottom_downs .boxFather div{
+		display: inline-block;
+		vertical-align: text-top;
+		padding-bottom: 58px;
+	}
+	.bottom_downs .boxFather ul li{
+		list-style: none;
+	}
+	.bottom_downs .boxFather ul li:nth-child(1) span{
+		padding: 44px 0;
+		display: block;
+	}
+	.bottom_downs .boxFather ul li:nth-child(2) span{
+		display: block;
+		text-align: justify;
+		padding: 0 40px;
+		height: 140px;
+		color: #989898;
+		font-size: 14px;
+		line-height: 2.4;
+	}
+	.bottom_downs{
+		    position: absolute;
+	}
+	.bottom_downs .boxFather a{
+		text-decoration: none;
+		display: block;
+		margin: 0 auto;
+		color: #fff;
+		width: 238px;
+		padding: 10px 0;
+		background-color: #76c2af;
+		border-radius: 30px 30px 30px 30px;
+	}
+	.bottom_downs .boxFather div:nth-child(1),.bottom_downs .boxFather div:nth-child(3){
+		background-color: rgba(251,251,249,1);
+	}
+	.bottom_downs .boxFather div:nth-child(2){
+		background-color: rgba(215,251,255,1);
+	}
+	
+	.bottom_downs .boxFather a img{
+		width: 25px;
+		vertical-align: middle;
+		padding-right: 8px;
+		
+	}
+	.top_big_words .line,.page4_top_bk .line{
+		border-left: 1px solid #fff;
+		height: 55px;
+		display: inline-block;
+		margin: 0 15px;
+	}
+	.top_big_words .left_woImg,.top_big_words .right_woImg,.page4_top_bk .left_woImg,.page4_top_bk .right_woImg{
+		display: inline-block;
+	}
+	.top_big_words,.page4_top_words_box{
+		display: -moz-box;  /* Firefox */
+		display: -ms-flexbox;    /* IE10 */
+		display: -webkit-box;    /* Safari */ 
+		display: -webkit-flex;    /* Chrome, WebKit */
+		display: box; 
+		display: flexbox; 
+		display: flex;
+		-webkit-box-align: center;
+		-webkit-align-items: center;
+		align-items: center;
+		justify-content:center;
+	}
+	.top_big_words,.page4_top_words_box{
+		position: relative;
+	}
+	
+	.page3_top_bk{
+		background: url(img/index/bkpage3.png) no-repeat 100% 100%;
+		background-size: 100% 100%;
+		width: 100%;
+		height: 50%;
+		position: absolute;
+		top: 0;
+	}
+	
+	.page3_top_bk .i_wt_join{
+	display: block;
+	cursor: pointer;
+    position: absolute;
+    right: 0;
+    bottom: 22%;
+    background-color: #2ec4d1;
+    border-radius: 5px;
+    width: 163px;
+    color: #fff;
+    left: 50%;
+    font-size: 19.2;
+    letter-spacing: 5px;
+    text-align: center;
+    padding: 10px 0;
+	border:0;
+	}
+	.page3_top_bk .i_wt_join:hover{
+		background-color: #02aebd;
+	}
+	.page3_bottom_texts{
+		position: absolute;
+		
+	}
+	.page3_bottom_texts .first_words{
+		padding-top: 95px ;
+		padding-bottom: 45px;
+		font-size: 24px;
+		letter-spacing: 3px;
+	}
+	.page4_top_bk{
+		background: url(img/index/page4bkimg_02.png) no-repeat 100% 100%;
+		background-size: 100% 100%;
+		width: 100%;
+		height: 50%;
+		position: absolute;
+		top: 0;
+	}
+	
+
+/* .certify .swiper-container {
+	padding-bottom: 60px;
+} */
+
+.certify  .swiper-slide {
+	width: auto;
+}
+.certify  .swiper-slide img{
+	display:block;
+	width: 100%;
+	box-shadow: 0px 0px 15px 1px rgba(255, 255, 255, 0.4);
+}
+
+
+.certify .swiper-pagination {
+	width: 100%;
+	bottom: 20px;
+}
+
+
+
+.swiper-container-v{
+	margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding: 5px;
+    z-index: 1;
+	cursor: pointer;
+	}
+	
+	    .certify {
+		position: relative;
+		width: 12rem;
+		margin: 0 auto
+	}
+	#s1_1 .top_big_words_2 {
+    font-size: 0.55rem;
+    color: #fff;
+    position: absolute;
+    top: 0.80rem;
+}
+.bottom_tab th{
+	background-color: #2a81f2;
+	color: #fff;
+	font-size: 18px;
+	border-color: #2a81f2;
+	padding: 0.08rem 0 !important;
+}
+.bottom_tab{
+	 width: 11.27rem;
+	position: absolute;
+	padding: 0.3rem;
+	background-color: #fff;
+	box-shadow: 0px 0px 0px 16px rgba(255,255,255,0.2)
+}
+.bottom_tab .alltitle_tab{
+	color: #000;
+	font-size: 24px;
+	padding: 0.1rem 0;
+}
+.bottom_tab .alltitle_tab span{
+	color: #f24a08;
+}
+.bottom_tab .layui-laypage .layui-laypage-curr .layui-laypage-em{
+	background-color: #17a1ff;
+}
+#s4{
+	background-color: #000;
+}
+
+
+</style>
+</head>
+<body>
+ <!--顶部logo 以及导航开始-->
+ <section class="header">
+	 <div class="top_color"></div>
+     <div class="container">
+		  <div class="header-logo">
+		     <img src="img/index/LOGO.png" alt="">
+		 </div>
+         <div class="header-nav">
+             <ul>
+                 <li><span class="slide-1">首页</span></li>
+                 <li><span class="slide-2">产品介绍</span></li>
+                 <li><span class="slide-3">代理加盟</span></li>
+                 <li><span class="slide-4">今日更新</span></li>
+                 <li><span class="slide-5">关于我们</span></li>
+             </ul>
+         </div>
+		 <div class="header-explain">
+		     <a href="#" class="header-explain-top" >网吧后台</a>
+		     <a href="#" class="header-explain-bottom" >服务商后台</a>
+		 </div>
+     </div>
+ </section>
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+		<!-- 第一屏 首页1-->
+        <div class="swiper-slide" id="s1" >
+			<div class="top_words">
+				绿色无广告
+			</div>
+              <div class="comp1">
+              	<img src="img/index/Computer1.png" class="comp1Img" >
+				<div class="left_words" >
+					<div class="left_top_maks ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="1.6s" swiper-animate-delay="0.6s">
+						<img src="img/index/jd.png" >
+					</div>
+					<div class="left_bottom_maks ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.7s" swiper-animate-delay="0.2s">		
+					</div>
+					<div class="twinkle ani" id='twinkle' swiper-animate-effect="fadeInDown" swiper-animate-duration="2s" swiper-animate-delay="2s">
+						
+					</div>
+				</div>
+				<div class="right_words"> 
+					<div class="right_top_maks ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="1.6s" swiper-animate-delay="0.6s">
+						<img src="img/index/jj.png" class="comp2Img" >
+					</div>
+					<div class="right_bottom_maks ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.7s" swiper-animate-delay="0.2s">
+								  	
+					</div>
+				</div>
+				<div class="comp2">
+					<img src="img/index/Computer2.png" >
+				</div>
+              </div>
+        </div>
+		<!-- 第二屏 首页2-->
+		<div class="swiper-slide" id="s1_1" > 
+		<div class="top_big_words_2">
+			海量资源
+		</div>
+		<div class="certify">
+		<div class="swiper-container-v">
+          <div class="swiper-wrapper">
+            	<div class="swiper-slide"><img src="img/index/lol.png" /></div>
+            	<div class="swiper-slide"><img src="img/index/DNF.png" ></div>
+            	<div class="swiper-slide"><img src="img/index/msj.png" /></div>
+            	<div class="swiper-slide"><img src="img/index/jdqs.png" /></div>
+            	<div class="swiper-slide"><img src="img/index/cf.png" /></div>
+          </div>
+        </div>
+			</div>
+				
+				
+			
+
+		</div>
+		<!-- 第三屏 产品介绍-->
+        <div class="swiper-slide" id="s2" >
+			<div class="top_bkimg_box">
+				<div class="top_big_words">
+					<div class="left_woImg">
+						<img src="img/index/left_word_page2.png" >
+					</div>
+					<span class="line"></span>
+					<div class="right_woImg">
+						<img src="img/index/right_word_page2.png" >
+					</div>
+					
+				</div>
+				<div class="top_bkimg_bottom_imgBox">
+					<div><span><img src="img/index/3page2.png" id='down_t_1'></span></div><div><span><img src="img/index/2page2.png" ></span></div><div><span><img src="img/index/1page1.png" ></span></div>
+				</div>
+			</div> 
+			<div class="bottom_downs">
+				<div class="boxFather">
+					<div>
+						<ul>
+							<li><span>服务端</span></li>
+							<li><span>强大的服务端性能，实现全年365*24小时带机不重启，稳定的三层更新，丰富的游戏资源，让网吧从此告别游戏量不足的痛苦。</span></li>
+							<li><a href="" class='downBtn ani' swiper-animate-effect="wobble" swiper-animate-duration="0.7s" swiper-animate-delay="0s"><img src="img/index/downimg.png" >下载服务器</a></li>
+						</ul>
+					</div><div>
+						<ul>
+							<li><span>服务端</span></li>
+							<li><span>一键导入其它第三方平台客户机IP和MAC</span></li>
+							<li><a href="" class='downBtn ani' swiper-animate-effect="wobble" swiper-animate-duration="0.7s" swiper-animate-delay="0.2s"><img src="img/index/downimg.png" >下载客户端</a></li>
+						</ul>
+					</div><div>
+						<ul>
+							<li><span>服务端</span></li>
+							<li><span>经典界面布局，查找游戏一目了然纯净绿色菜单，无任何广告，提升玩家上机体验。</span></li>
+							<li><a href="" class='downBtn ani' swiper-animate-effect="wobble" swiper-animate-duration="0.7s" swiper-animate-delay="0.4s"><img src="img/index/downimg.png" >下载镜像</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		
+		<!-- 第四屏 代理加盟-->
+        <div class="swiper-slide" id="s3" > 
+			<div class="page3_top_bk">
+				<button class='i_wt_join ani' swiper-animate-effect="fadeInRight" swiper-animate-duration="0.7s" swiper-animate-delay="0s">我要加盟</button>
+			</div>
+			<div class="page3_bottom_texts">
+				<div class="first_words">
+					立即成为马蹄更新合作伙伴
+				</div>
+				<div class="speed_join">
+					<img src="img/index/speedJoin_03.png" >
+				</div>
+			</div>
+			
+		</div>
+		<!-- 第五屏 今日更新-->
+		<div class="swiper-slide" id="s4" > 
+			<div class="page4_top_bk">
+				<div class="page4_top_words_box">
+				<div class="left_woImg">
+					<img src="img/index/nday.png" >
+				</div>
+				<span class="line"></span>
+				<div class="right_woImg">
+					<img src="img/index/nday_words.png" >
+				</div>
+				</div>
+			</div>
+			<div class="bottom_tab">
+				<div class="alltitle_tab">
+					今日更新游戏<span>（X款）</span>
+				</div>
+				<table id="tab_list" lay-filter="tab_list"></table>
+			</div>
+		</div>
+		<!-- 第六屏 关于我们-->
+		<div class="swiper-slide" id="s5" > 
+			关于我们
+		</div>
+    </div>
+    <!--右侧按钮-->
+    <div class="swiper-pagination"></div>
+</div>
+    <!--底部按钮-->
+    <div class="swiper-button-next">
+        <div class="next-but-arraw"><img src="img/index/btn-next.png" ></div>
+    </div>
+ <script src="js/jquery-1.12.3.min.js" ></script>
+<script src="js/swiper.js"></script>
+<script src="js/swiper.animate1.0.3.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/layui/layui.js" type="text/javascript" charset="utf-8"></script>
+<script>
+	$(document).ready(function () {
+		// chrome 浏览器直接加上下面这个样式就行了，但是ff不识别
+		$('body').css('zoom', 'reset');
+		$(document).keydown(function (event) {
+	  	//event.metaKey mac的command键
+	  	if ((event.ctrlKey === true || event.metaKey === true)&& (event.which === 61 || event.which === 107 || event.which === 173 || event.which === 109 || event.which === 187  || event.which === 189)){
+	    	event.preventDefault();
+	  	}
+		});
+		$(window).bind('mousewheel DOMMouseScroll', function (event) {
+	  	if (event.ctrlKey === true || event.metaKey) {
+	    	event.preventDefault();
+	  	}
+		});
+		//调整某些动态元素的样式
+		changeNodeSize()
+		function changeNodeSize(){
+			//产品介绍顶部文字保持空白处居中(产品介绍)
+			$('.top_big_words').css('top',''+($('.top_bkimg_box').outerHeight()-$(".top_bkimg_bottom_imgBox").outerHeight())/2-($('.top_big_words').outerHeight()/2)+'px')
+			//下载按钮所在的盒子高度(产品介绍)
+			$($('.boxFather').children("div").get(0)).css('width',''+$($(".top_bkimg_bottom_imgBox").children("div").get(0)).outerWidth(true)+'px')
+			$($('.boxFather').children("div").get(1)).css('width',''+$($(".top_bkimg_bottom_imgBox").children("div").get(1)).outerWidth(true)+'px')
+			$($('.boxFather').children("div").get(2)).css('width',''+$($(".top_bkimg_bottom_imgBox").children("div").get(2)).outerWidth(true)+'px')
+			//下载按钮所在的区域顶部保持在中线(产品介绍)
+			$('.bottom_downs').css('top',''+$('.top_bkimg_box').outerHeight()+'px')
+			
+			
+			//下半部分的位置(代理加盟)
+			$('.page3_bottom_texts').css('top',''+$('.page3_top_bk').outerHeight()+'px')
+			
+			//产品介绍顶部文字保持空白处居中(今日更新)
+			// $('.page4_top_words_box').css('top',''+($('.page4_top_bk').outerHeight()-$(".bottom_tab").outerHeight()/2)/2-($('.page4_top_words_box').outerHeight()/2)+'px')
+		}
+		//调整今日更新 大标题的位置
+		function nowDayT(){
+			
+			$('.page4_top_words_box').css('top',''+($('.page4_top_bk').outerHeight()-$(".bottom_tab").outerHeight()/2)/2-($('.page4_top_words_box').outerHeight()/2)+'px')
+		}
+		$(window).resize(function(){
+			changeNodeSize()
+			nowDayT()
+		})
+	})
+	
+	//整屏轮播
+    var swiper = new Swiper('.swiper-container', {
+        paginationClickable: true,
+		// 如果需要前进后退按钮
+		nextButton: '.swiper-button-next',
+		keyboard : true,
+		mousewheel : true,
+		direction:'vertical',
+		mousewheelForceToAxis : true,
+		autoplay:3000,
+		watchSlidesProgress : true,
+		watchSlidesVisibility : true,
+		pagination: {
+			el: '.swiper-pagination',
+		},
+		navigation: {
+			nextEl: '.swiper-button-next',
+		},
+    	on:{
+			
+      init: function(){
+		  
+		
+        swiperAnimateCache(this); //隐藏动画元素 
+        swiperAnimate(this); //初始化完成开始动画
+		$('.slide-'+(this.activeIndex+1)+'').css('color','#29a0f3')
+      }, 
+      slideChangeTransitionEnd: function(){ 
+		  $('#twinkle').removeClass('twinkle')
+		  
+// 		   $('.twinkle').addClass('ani')
+// $('.twinkle').addClass('ani')
+		   switch (swiper.activeIndex) {
+                case 0:
+                    setTimeout(function(){
+						
+						$('#twinkle').addClass('twinkle')
+//                         $("p").css({
+//                             animation: 'flash 1s linear 0s infinite'
+//                         })
+                    },500);//定时器时间是上一个动画执行时间
+                    break;
+                case 2:
+            }
+        swiperAnimate(this); //每个slide切换结束时也运行当前slide动画
+        //this.slides.eq(this.activeIndex).find('.ani').removeClass('ani'); 动画只展现一次，去除ani类名
+		$('.header-nav span').css('color','')
+		if(swiper.realIndex==1||swiper.realIndex==0){
+			$('.slide-1').css('color','#29a0f3')
+		}else{
+			$('.slide-'+(swiper.realIndex)+'').css('color','#29a0f3')
+		}
+		
+      } ,
+
+    }
+    });
+	 document.querySelector('.slide-1').addEventListener('click', function (e) {
+      e.preventDefault();
+      swiper.slideTo(0, 0);
+    });
+    document.querySelector('.slide-2').addEventListener('click', function (e) {
+      e.preventDefault();
+      swiper.slideTo(2, 0);
+    });
+    document.querySelector('.slide-3').addEventListener('click', function (e) {
+      e.preventDefault();
+      swiper.slideTo(3, 0);
+    });
+	document.querySelector('.slide-4').addEventListener('click', function (e) {
+	  e.preventDefault();
+	  swiper.slideTo(4, 0);
+	});
+	document.querySelector('.slide-5').addEventListener('click', function (e) {
+	  e.preventDefault();
+	  swiper.slideTo(5, 0);
+	});
+	
+// 	img1.onload = function() {
+//             p1.innerHTML = 'loaded'
+//         }
+
+
+// 首页2轮播
+certifySwiper = new Swiper('.swiper-container-v', {
+	watchSlidesProgress: true,
+	effect : 'coverflow',
+	slidesPerView: 3,
+	centeredSlides: true,
+	loop: true,
+	
+	loopedSlides: 4,
+	observer:true,//修改swiper自己或子元素时，自动初始化swiper
+    observeParents:true,//修改swiper的父元素时，自动初始化swiper
+	// autoHeight: true,
+	autoplay: true,
+	slideToClickedSlide: true,
+	autoplay:{
+		delay: 2500,
+		disableOnInteraction: false,
+	},
+		coverflowEffect: {
+	    rotate: 0,
+	    stretch: 0,
+	    depth: 18,
+	    modifier: 20,
+	    slideShadows : true
+	  },
+
+})
+
+
+//今日更新表格
+layui.use(['layer', 'table'], function(){
+  var table = layui.table,layer = layui.layer;
+  //第一个实例
+  tableIns = table.render({
+      elem: '#tab_list'
+      ,url: 'tabData.json',
+	  limit:6,
+	  limits: [6,12,24],
+	  title:'今日更新'
+      ,page: true
+      ,even:true
+	  
+	  
+      // ,height:356
+      ,cols: [[
+      {field: 'game_name', title: '游戏名称',align:'center',style:'color: #2a81f2;'}
+      ,{field:'game_type',title: '游戏类别',align:'center'}
+      ,{field:'game_size',title: '游戏大小',align:'center'}
+      ,{field:'game_time',title: '发布时间',align:'center'}
+      ]],
+	  done:function (res) {   //返回数据执行回调函数
+		$('.page4_top_words_box').css('top',''+($('.page4_top_bk').outerHeight()-$(".bottom_tab").outerHeight()/2)/2-($('.page4_top_words_box').outerHeight()/2)+'px')
+	}
+  });
+ 
+
+		
+
+  
+});
+
+</script>
+<script src="js/rem.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>
