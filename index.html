@@ -4,24 +4,23 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title></title>
-		<link rel="stylesheet" type="text/css" href="css/music.css"/>
+		<link rel="stylesheet" type="text/css" href="css/music.css" />
 		<script type="text/javascript">
-if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
-	              //alert("当前是手机端")
-	             
-	            } else {
-	              //alert("当前是电脑端")
-	              alert("请使用手机打开，或者PC端浏览器按F12调成手机模式再刷新重试")
+			if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
+				//alert("当前是手机端")
 
-	            }
+			} else {
+				//alert("当前是电脑端")
+				alert("请使用手机打开，或者PC端浏览器按F12调成手机模式再刷新重试")
 
+			}
 		</script>
 	</head>
 	<body>
 		<div class="pg_musicbody">
-		<div class="pg_music">
-		
-			<!-- <div class="pagetop">
+			<div class="pg_music">
+
+				<!-- <div class="pagetop">
 		
 					<span class="mail-log" onClick={this.goback}>
 						<
@@ -31,645 +30,774 @@ if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
 			</div> -->
 
 
-  
 
-            <section class="music_cd" >   
-            
-            <div class="container">
-            <audio src='http://music.163.com/song/media/outer/url?id=1400256289.mp3' name="你的答案-阿冗" imgvl="http://p2.music.126.net/OlX-4S4L0Hdkyy_DQ27zag==/109951164459621658.jpg?param=130y130" id="audio3">
-            
-            </audio>
-			
-			<audio src='http://music.163.com/song/media/outer/url?id=1384527426.mp3' imgvl="http://p2.music.126.net/94ofbrM9sC9cQzKf2rO2GQ==/109951164297796644.jpg?param=130y130" name="不得不爱-Lambert" id="audio5" >
-			
-			</audio>
-			<audio src='http://music.163.com/song/media/outer/url?id=1407794268.mp3' imgvl="http://p1.music.126.net/oJ7XPcc9wFxCeYt67np5-A==/109951164529896396.jpg?param=130y130" name="感情医生-尚士达" id="audio1" >
-			
-			</audio>
-			
-            <audio src='http://music.163.com/song/media/outer/url?id=1391891631.mp3' name="嗜好-颜人中" imgvl="http://p2.music.126.net/J6HaJjtgv-yVVjyUm-h-AA==/109951164373633387.jpg?param=130y130" id="audio2" >
-            
-            </audio>
-			
-			<!-- https://music.163.com/song?id=1319689130&userid=274000517 -->
-        
-		
-		<audio src='http://music.163.com/song/media/outer/url?id=1404885266.mp3' imgvl="http://p2.music.126.net/Aj4X1kpV-C2LLi-e_Xhgvg==/109951164499744148.jpg?param=130y130" name="下山-要不要买菜" id="audio4" >
-		
-		</audio>
-                <div class="needle"></div>
-		        <div class="disc-box">
-                    <div class="disc"></div>
-                    <img src='' id="cdimg"/>
-                </div>
-            <div class="disc-boxs">
-            	<div class="disc"></div>
-            	<img src='' id="cdimgr"/>
-            </div>
-			<div class="disc-boxsl">
-				<div class="disc"></div>
-				<img src='' id="cdimgl"/>
-			</div>
-  
-		    </div>
-            </section>
-		
 
-            <section class="music_flooter">   
-                <div class="container">
-                    <div class="progress-wrapper">
-                        <span class="progress-time progress-time-l">00:00</span>
-                        <div class="mmProgress">
-                            <div class="mmProgress-bar"></div>
-                            <div class="mmProgress-outer"></div>
-                            <div class="mmProgress-inner">
-                                <div class="mmProgress-dot">
-                                    <div class='dar'>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <span class="progress-time progress-time-r">99:99</span>
-                    </div>
-		        
-                    <div class="btn-wrapper">
-                        <!-- <div class="btnf btn-list"><a href="wpsite.html">无盘官网</a> </div> -->
-                        <div class="btnf btn-prev"></div>
-                        <div class="btnf btn-play btn-pause btn-stop"></div>
-                        <div class="btnf btn-next"></div>
-                        
-                    </div>
-                </div>
-            </section>
+				<section class="music_cd">
+
+					<div class="container">
+						<!-- <audio 
+						autoplay="autoplay"
+						src='http://music.163.com/song/media/outer/url?id=1400256289.mp3' name="你的答案-阿冗" imgvl="http://p2.music.126.net/OlX-4S4L0Hdkyy_DQ27zag==/109951164459621658.jpg?param=130y130"
+						 id="audio3">
+
+						</audio>
+
+						<audio 
+						autoplay="autoplay"
+						src='http://music.163.com/song/media/outer/url?id=1384527426.mp3' imgvl="http://p2.music.126.net/94ofbrM9sC9cQzKf2rO2GQ==/109951164297796644.jpg?param=130y130"
+						 name="不得不爱-Lambert" id="audio5">
+
+						</audio>
+						<audio 
+						autoplay="autoplay"
+						src='http://music.163.com/song/media/outer/url?id=1407794268.mp3' imgvl="http://p1.music.126.net/oJ7XPcc9wFxCeYt67np5-A==/109951164529896396.jpg?param=130y130"
+						 name="感情医生-尚士达" id="audio1">
+
+						</audio>
+
+						<audio 
+						autoplay="autoplay"
+						src='http://music.163.com/song/media/outer/url?id=1391891631.mp3' name="嗜好-颜人中" imgvl="http://p2.music.126.net/J6HaJjtgv-yVVjyUm-h-AA==/109951164373633387.jpg?param=130y130"
+						 id="audio2">
+
+						</audio>
+
+						<!-- https://music.163.com/song?id=1319689130&userid=274000517 -->
+
+
+						<!-- <audio 
+						autoplay="autoplay"
+						src='http://music.163.com/song/media/outer/url?id=1404885266.mp3' imgvl="http://p2.music.126.net/Aj4X1kpV-C2LLi-e_Xhgvg==/109951164499744148.jpg?param=130y130"
+						 name="下山-要不要买菜" id="audio4">
+
+						</audio> -->
+						<div class="needle"></div>
+						<div class="disc-box">
+							<div class="disc"></div>
+							<img src='' id="cdimg" />
+						</div>
+						<div class="disc-boxs">
+							<div class="disc"></div>
+							<img src='' id="cdimgr" />
+						</div>
+						<div class="disc-boxsl">
+							<div class="disc"></div>
+							<img src='' id="cdimgl" />
+						</div>
+
+					</div>
+				</section>
+
+
+				<section class="music_flooter">
+					<div class="container">
+						<div class="progress-wrapper">
+							<span class="progress-time progress-time-l">00:00</span>
+							<div class="mmProgress">
+								<div class="mmProgress-bar"></div>
+								<div class="mmProgress-outer"></div>
+								<div class="mmProgress-inner">
+									<div class="mmProgress-dot">
+										<div class='dar'>
+										</div>
+									</div>
+								</div>
+							</div>
+							<span class="progress-time progress-time-r">99:99</span>
+						</div>
+
+						<div class="btn-wrapper">
+							<!-- <div class="btnf btn-list"><a href="wpsite.html">无盘官网</a> </div> -->
+							<div class="btnf btn-prev"></div>
+							<div class="btnf btn-play btn-pause btn-stop"></div>
+							<div class="btnf btn-next"></div>
+
+						</div>
+
+					</div>
+				</section>
 			</div>
+
+
+
+			<div id="modelTip" style="width: 100%;z-index: 999;position: fixed;top: 0;display: none;">
+				<div style="background-color: rgba(0,0,0,0.5);">
+					<h2 style="color: #F24A08;">提示</h2>
+					<div style="color: #fff;text-indent: 30px;">由于浏览器禁止自动播放，请点击界面任何地方，将会自动播放</div>
+				</div>
 			</div>
+
+
+		</div>
 		<script src="disjs/wx.js" type="text/javascript" charset="utf-8"></script>
-<script>
-				
-	var audio1 = document.getElementById('audio1')
-// 	var audio2 = document.getElementById('audio2')
-// 	var audios=[audio1,audio2]
-	// audio1.muted = true;
-    window.onload=function(){
-		// alert('s')
-        document.querySelector("body").setAttribute("style","background-color:rgba(78,78,78,1)!important")
-        var play = document.querySelector('.btn-play')//播放展暂停按钮
-        var plength = document.querySelector('.mmProgress-inner')//进度条
-        var audio1 = document.getElementById('audio1')
-        var audio2 = document.getElementById('audio2')
-		var audio3 = document.getElementById('audio3')
-		var audio4 = document.getElementById('audio4')
-		var audio5 = document.getElementById('audio5')
-        var audios=[audio1,audio2,audio3,audio4,audio5]
-		
-        var body = document.body
-        var alllength = document.querySelector('.mmProgress').offsetWidth//进度条的总长度px
-        var nextbtn= document.querySelector('.btn-next')
-        var prevbtn = document.querySelector('.btn-prev')
-        var dot = document.querySelector('.mmProgress-dot')//进度条的点
-        plength.style.maxWidth=alllength+"px"
-        var cd = document.querySelector('.disc-box')//旋转光碟
-		var cdr = document.querySelector('.disc-boxs')//下一曲的旋转光碟
-		var cdl = document.querySelector('.disc-boxsl')//上一曲的旋转光碟
-        var needle = document.querySelector('.needle')//光麦
-		var cdimg = document.getElementById('cdimg')//cd上的img
-		cdimg.setAttribute("src",""+audios[0].getAttribute('imgvl')+"")
-		var cdimgr = document.getElementById('cdimgr')//cd下一曲的img
-		var cdimgl = document.getElementById('cdimgl')//cd上一曲的img
-        var time_l = document.querySelector(".progress-time-l")
-        var time_r = document.querySelector(".progress-time-r")
-        var index = 0
-        var open=true
-        var timer
-        var timers
-        var timer1
-        var timer2
-        var deg=0;
-        var a=0;//点击进度点的初始位置x坐标
-        var b=0;
-        var movex=0;
-        var timercd;
-		var leftVl=50
-		var leftVlr=136
-		
-		var leftVll=-36
-        var jdtwidth = plength.style;
-        // console.log("jd"+jdtwidth)
-	    function autoPlayAudio() {
-      wx.config({
-            // 配置信息, 即使不正确也能使用 wx.ready
-            debug: false,
-            appId: '',
-            timestamp: 1,
-            nonceStr: '',
-            signature: '',
-            jsApiList: []
-        });
-        wx.ready(function() {
-	
-		
+		<script>
 			
-				audios[0].addEventListener("ended",function(){
-					audios[index].load()
-			setTimeout(function(){
+			var audios = [{
+					name: "你的答案-阿冗",
+					src: "http://music.163.com/song/media/outer/url?id=1400256289.mp3",
+					imgvl: "http://p2.music.126.net/OlX-4S4L0Hdkyy_DQ27zag==/109951164459621658.jpg?param=130y130"
+				},
+				{
+					name: "不得不爱-Lambert",
+					src: "http://music.163.com/song/media/outer/url?id=1384527426.mp3",
+					imgvl: "http://p2.music.126.net/94ofbrM9sC9cQzKf2rO2GQ==/109951164297796644.jpg?param=130y130"
+				},
+				{
+					name: "感情医生-尚士达",
+					src: "http://music.163.com/song/media/outer/url?id=1407794268.mp3",
+					imgvl: "http://p1.music.126.net/oJ7XPcc9wFxCeYt67np5-A==/109951164529896396.jpg?param=130y130"
+				},
+				{
+					name: "嗜好-颜人中",
+					src: "http://music.163.com/song/media/outer/url?id=1391891631.mp3",
+					imgvl: "http://p2.music.126.net/J6HaJjtgv-yVVjyUm-h-AA==/109951164373633387.jpg?param=130y130"
+				},
+				{
+					name: "下山-要不要买菜",
+					src: "http://music.163.com/song/media/outer/url?id=1404885266.mp3",
+					imgvl: "http://p2.music.126.net/Aj4X1kpV-C2LLi-e_Xhgvg==/109951164499744148.jpg?param=130y130"
+				},
+			]
+			// 	var audio2 = document.getElementById('audio2')
+			// 	var audios=[audio1,audio2]
+			// audio1.muted = true;
+			window.onload = function() {
+				var body = document.body
+				var audio = document.createElement('audio');
+				var source = document.createElement('source');
+				source.type = "audio/mpeg";
+				source.autoplay = "autoplay";
+				source.controls = "controls";
+				
+audio.appendChild(source);
+				function playFun(url) {
+// 					if(document.getElementsByName("source")){
+// 						alert()
+// 						audio.removeNode(document.getElementsByName("source"))
+// 						
+// 					}
+// if(audio.hasChildNodes()){audio.removeChild()}
 					
-					audios[1].play()
-			},3000)
-				})
-	    
-		
-            audios[index].play();
-        });
-};
-         //调整播放进度
-         //voiceStatu用來記録狀態,使 touchstart 事件只能觸發一次有效,避免與 click 事件衝突
-        var voiceStatu = true;
-        //监听 touchstart 事件进而调用 <audio> 元素提供的 play() 方法播放音频
-        document.addEventListener("touchstart",function(e){
-            if(voiceStatu){
-                audios[index].play();
-                voiceStatu = false;
-            }
-        }, false);
-         dot.addEventListener('touchstart',function(e){
-            
-            clearInterval(timer1)
-            clearInterval(timers)
-            var touch = e.touches[0]
-            a = touch.clientX	//	获取触摸的初始位置
-	        b = parseInt(plength.style.width)	//	此处忽略IE浏览器兼容性
-            
-         },false)
-         dot.addEventListener('touchmove',function(e){
-            clearInterval(timer1)
-            clearInterval(timers)
-            // e.preventDefault()
-            var touch = e.touches[0]
-            // alert('yi')
-            movex = touch.clientX - a	//	通过当前位置与初始位置之差计算改变的距离
-            
-            var lenth=audios[index].duration;
-            var cur=audios[index].currentTime;//获取当前的播放时间
-            jdtwidth.width =alllength/parseFloat(lenth)*parseFloat(cur)+movex+"px";
-         },false)
-         dot.addEventListener('touchend',function(e){
-			 
-            var lenth=audios[index].duration;
-            var changetime=parseInt(lenth/alllength*parseInt(jdtwidth.width))
-            
-           if(changetime<lenth){
-            audios[index].currentTime=""+changetime+"";
-           }else{
-            audios[index].currentTime=""+lenth-1+"";
-           }
-           audios[index].play();
-            jindutiao()
-            // alert('222')
-         },false)
-        //将进度条置0
-        function reducejindutiao(){
-            clearInterval(timer1);
-            
-            plength.style.width="0";
-        }
-        //音乐停止
-        function pauseall(){
-            for (var i=0;i<audios.length;i++) {
-                if(audios[i]){
-                    audios[i].pause();
-                }
-            }
-        }
-        //重置总时长的数字显示
-        function playChangeAllnbr(){
-            var lenth=audios[index].duration;
-            
-            var lenth1=parseInt(lenth);
-           
-                var minute1=parseInt(lenth1/60);
-                if(lenth1%60<10){
-                    time_r.innerHTML=minute1+":0"+lenth1%60+"";
-                }else{
-                    time_r.innerHTML=minute1+":"+lenth1%60+"";
-                }
-        }
-        //将cd重置 并旋转
-        function playChangeCd(){
-            if(cd.style.transform!=="0deg"){
-                deg=0;
-            }
-            timercd=setInterval(function(){
-                cd.style.transform="rotate("+deg+"deg)";
-                deg+=0.1;
-                if(deg>360){
-                    deg=0;
-                }
-            },1)
-        }
-		function changCdr(){
-			clearInterval(cdtime)
+					console.log("aa",audio.children)
+					
+					source.src = url;
+					// source.removeNode(source)
+					
+					audio.load()
 
-			var cdtime=setInterval(function(){
-				cd.style.left=""+leftVl+"%";
-				leftVl-=1.5
-				if(leftVl<36){
-					pdlefcdr()
-					clearInterval(cdtime)
 				}
-			},0)
-			if(leftVl<36){
-				// alert("00")
-				pdlefcdr()
-				// clearInterval(cdtime)
-			}
-		}
-		function pdlefcdr(){
-			// alert("s")
 
-			var cdtimer=setInterval(function(){
-				cd.style.left=""+leftVl+"%";
-				leftVl-=1.5
-				cdr.style.left=""+leftVlr+"%";
-				leftVlr-=1.5
-				if(parseInt(leftVlr)==50){
-					clearInterval(timercd)
-					playChangeCd();//重置cd 并重新旋转
-					var imgvl=audios[index].getAttribute('imgvl')
-					cdimg.setAttribute("src",imgvl)
-					leftVl=50
-					leftVlr=136
+				// alert('s')
+				document.querySelector("body").setAttribute("style", "background-color:rgba(78,78,78,1)!important")
+				var play = document.querySelector('.btn-play') //播放展暂停按钮
+// 				play.onclick = function() {
+// 					playFun("http://music.163.com/song/media/outer/url?id=1400256289.mp3")
+// 				}
+				var plength = document.querySelector('.mmProgress-inner') //进度条
+				var audio1 = document.getElementById('audio1')
+				var audio2 = document.getElementById('audio2')
+				var audio3 = document.getElementById('audio3')
+				var audio4 = document.getElementById('audio4')
+				var audio5 = document.getElementById('audio5')
+				// var audios = [audio1, audio2, audio3, audio4, audio5]
+
+
+				var alllength = document.querySelector('.mmProgress').offsetWidth //进度条的总长度px
+				var nextbtn = document.querySelector('.btn-next')
+				var prevbtn = document.querySelector('.btn-prev')
+				var dot = document.querySelector('.mmProgress-dot') //进度条的点
+				plength.style.maxWidth = alllength + "px"
+				var cd = document.querySelector('.disc-box') //旋转光碟
+				var cdr = document.querySelector('.disc-boxs') //下一曲的旋转光碟
+				var cdl = document.querySelector('.disc-boxsl') //上一曲的旋转光碟
+				var needle = document.querySelector('.needle') //光麦
+				var cdimg = document.getElementById('cdimg') //cd上的img
+				cdimg.setAttribute("src", "" + audios[0].imgvl + "")
+				var cdimgr = document.getElementById('cdimgr') //cd下一曲的img
+				var cdimgl = document.getElementById('cdimgl') //cd上一曲的img
+				var time_l = document.querySelector(".progress-time-l")
+				var time_r = document.querySelector(".progress-time-r")
+				var modelTip = document.getElementById("modelTip") //Moadl提示
+				var index = 0
+				var open = true
+				var timer
+				var timers
+				var timer1
+				var timer2
+				var deg = 0;
+				var a = 0; //点击进度点的初始位置x坐标
+				var b = 0;
+				var movex = 0;
+				var timercd;
+				var leftVl = 50
+				var leftVlr = 136
+
+				var leftVll = -36
+				var jdtwidth = plength.style;
+
+				//入口
+				setTimeout(function() {
 					
-					cd.style.left="50%"
-					cdr.style.left='136%'
-					clearInterval(cdtimer)
+						audio.addEventListener("ended", function() {
+
+							next()
+						})
 					
+					play.onclick()
+				}, 2000)
+
+
+				// console.log("jd"+jdtwidth)
+				function autoPlayAudio() {
+					wx.config({
+						// 配置信息, 即使不正确也能使用 wx.ready
+						debug: false,
+						appId: '',
+						timestamp: 1,
+						nonceStr: '',
+						signature: '',
+						jsApiList: []
+					});
+					wx.ready(function() {
+
+
+
+
+
+						audio.play();
+						jindutiao();
+					});
+				};
+				//调整播放进度
+				//voiceStatu用來記録狀態,使 touchstart 事件只能觸發一次有效,避免與 click 事件衝突
+				var voiceStatu = true;
+				//监听 touchstart 事件进而调用 <audio> 元素提供的 play() 方法播放音频
+				document.addEventListener("touchstart", function(e) {
+					if (voiceStatu) {
+						audio.play();
+						voiceStatu = false;
+					}
+				}, false);
+				dot.addEventListener('touchstart', function(e) {
+
+					clearInterval(timer1)
+					clearInterval(timers)
+					var touch = e.touches[0]
+					a = touch.clientX //	获取触摸的初始位置
+					b = parseInt(plength.style.width) //	此处忽略IE浏览器兼容性
+
+				}, false)
+				dot.addEventListener('touchmove', function(e) {
+					clearInterval(timer1)
+					clearInterval(timers)
+					// e.preventDefault()
+					var touch = e.touches[0]
+					// alert('yi')
+					movex = touch.clientX - a //	通过当前位置与初始位置之差计算改变的距离
+
+					var lenth = audio.duration;
+					var cur = audio.currentTime; //获取当前的播放时间
+					jdtwidth.width = alllength / parseFloat(lenth) * parseFloat(cur) + movex + "px";
+				}, false)
+				dot.addEventListener('touchend', function(e) {
+
+					var lenth = audio.duration;
+					var changetime = parseInt(lenth / alllength * parseInt(jdtwidth.width))
+
+					if (changetime < lenth) {
+						audio.currentTime = "" + changetime + "";
+					} else {
+						audio.currentTime = "" + lenth - 1 + "";
+					}
+					audio.play();
+					jindutiao()
+					// alert('222')
+				}, false)
+				//将进度条置0
+				function reducejindutiao() {
+					clearInterval(timer1);
+
+					plength.style.width = "0";
 				}
-			},0)
-		}
-		function changCdl(){
+				//音乐停止
+				function pauseall() {
+					for (var i = 0; i < audios.length; i++) {
+						if (audios[i]) {
+							audio.pause();
+						}
+					}
+				}
+				//重置总时长的数字显示
+				function playChangeAllnbr() {
+					var lenth = audio.duration;
+
+					var lenth1 = parseInt(lenth);
+
+					var minute1 = parseInt(lenth1 / 60);
+					if (lenth1 % 60 < 10) {
+						time_r.innerHTML = minute1 + ":0" + lenth1 % 60 + "";
+					} else {
+						time_r.innerHTML = minute1 + ":" + lenth1 % 60 + "";
+					}
+				}
+				//将cd重置 并旋转
+				function playChangeCd() {
+					if (cd.style.transform !== "0deg") {
+						deg = 0;
+					}
+					timercd = setInterval(function() {
+						cd.style.transform = "rotate(" + deg + "deg)";
+						deg += 0.1;
+						if (deg > 360) {
+							deg = 0;
+						}
+					}, 1)
+				}
+
+				function changCdr() {
 					clearInterval(cdtime)
-		
-					var cdtime=setInterval(function(){
-						cd.style.left=""+leftVl+"%";
-						leftVl+=1.5
-						if(leftVl>64){
+
+					var cdtime = setInterval(function() {
+						cd.style.left = "" + leftVl + "%";
+						leftVl -= 1.5
+						if (leftVl < 36) {
+							pdlefcdr()
+							clearInterval(cdtime)
+						}
+					}, 0)
+					if (leftVl < 36) {
+						// alert("00")
+						pdlefcdr()
+						// clearInterval(cdtime)
+					}
+				}
+
+				function pdlefcdr() {
+					// alert("s")
+
+					var cdtimer = setInterval(function() {
+						cd.style.left = "" + leftVl + "%";
+						leftVl -= 1.5
+						cdr.style.left = "" + leftVlr + "%";
+						leftVlr -= 1.5
+						if (parseInt(leftVlr) == 50) {
+							clearInterval(timercd)
+							playChangeCd(); //重置cd 并重新旋转
+							var imgvl = audios[index].imgvl
+							cdimg.setAttribute("src", imgvl)
+							leftVl = 50
+							leftVlr = 136
+
+							cd.style.left = "50%"
+							cdr.style.left = '136%'
+							clearInterval(cdtimer)
+
+						}
+					}, 0)
+				}
+
+				function changCdl() {
+					clearInterval(cdtime)
+
+					var cdtime = setInterval(function() {
+						cd.style.left = "" + leftVl + "%";
+						leftVl += 1.5
+						if (leftVl > 64) {
 							pdlefcdl()
 							clearInterval(cdtime)
 						}
-					},0)
+					}, 0)
 				}
-		function pdlefcdl(){
-			// alert("s")l
 
-			var cdtimer=setInterval(function(){
-				cd.style.left=""+leftVl+"%";
-				leftVl+=1.5
-				cdl.style.left=""+leftVll+"%";
-				leftVll+=1.5
-				if(leftVll>49){
-					// alert('ss')
-					clearInterval(timercd)
-					playChangeCd();//重置cd 并重新旋转
-					var imgvl=audios[index].getAttribute('imgvl')
-					cdimg.setAttribute("src",imgvl)
-					leftVl=50
-					leftVll=-36
-					
-					cd.style.left="50%"
-					cdl.style.left='-36%'
-					clearInterval(cdtimer)
-					
-				}
-			},0)
-		}
-        function qingkong(){//清空所有的计时器 并重新更新歌曲时长
-            clearInterval(timer);
-            clearInterval(timer1);
-            clearInterval(timer2);
-            timer2=setInterval(function(){
-                var cur=parseInt(audios[index].currentTime);//秒数
-                  var temp=cur;
-                 var minute=parseInt(temp/60);
-                  if(cur%60<10){
-                      time_l.innerHTML=""+minute+":0"+cur%60+"";
-                  }else{
-                      time_l.innerHTML=""+minute+":"+cur%60+"";
-                  }
-              },1000);
-        }
-        //上一曲
-        function bef(){
-			var indexl=index-1
-				if(indexl==-1){
-								indexl=audios.length-1
-								}
-			
-			var imgvl=audios[indexl].getAttribute('imgvl')
-			cdimgl.setAttribute("src",imgvl)
-			
-            clearInterval(timercd)
-            clearInterval(timer)
-            // playChangeCd();//重置cd 并重新旋转
-            qingkong();
-			needle.classList.remove('needled')
-            index--;
-            reducejindutiao();
-            pauseall();
-            if(index==-1){
-                index=audios.length-1;
-            }
-            playChangeAllnbr();
-            audios[index].currentTime=0//恢复从0开始播放
-            
-            jindutiao();
-            var audioName=audios[index].getAttribute('name')
-            var navs = document.getElementsByTagName('title')[0]
-            navs.innerHTML=audioName
-				changCdl()
-            console.log(navs)
-			setTimeout(function(){
-				needle.classList.add('needled')
-				var playPromise;
-				
-								playPromise = audios[index].play();
-				if (playPromise) {
-				                playPromise.then(() => {
-				                    // 音频加载成功
-				                    // 音频的播放需要耗时
-							audios[index].play();
-				                    setTimeout(() => {
-				                        // 后续操作
+				function pdlefcdl() {
+					// alert("s")l
 
-				                    }, audios[index].duration*1); // audio.duration 为音频的时长单位为秒
-				
-				
-				                }).catch((e) => {
-							audios[index].play();
-						var acttime=setInterval(function(){
-								if(audios[index].paused==true){
-								
-								audios[index].load()
-								audios[index].play();
-								
-								
+					var cdtimer = setInterval(function() {
+						cd.style.left = "" + leftVl + "%";
+						leftVl += 1.5
+						cdl.style.left = "" + leftVll + "%";
+						leftVll += 1.5
+						if (leftVll > 49) {
+							// alert('ss')
+							clearInterval(timercd)
+							playChangeCd(); //重置cd 并重新旋转
+							var imgvl = audios[index].imgvl
+							cdimg.setAttribute("src", imgvl)
+							leftVl = 50
+							leftVll = -36
 
-					document.addEventListener("WeixinJSBridgeReady", function () {
-						
-　　　　audios[index].play();
-　　}, false);
-　　document.addEventListener('YixinJSBridgeReady', function() {//易信
-　　　　audios[index].play();
-　　}, false);
+							cd.style.left = "50%"
+							cdl.style.left = '-36%'
+							clearInterval(cdtimer)
 
-
-								}else{
-									clearInterval(acttime)
-								}
-							},500)
-							var acttimed=setInterval(function(){
-							if(time_r.innerHTML=="NaN:NaN"){
-								clearInterval(timer1)
-								jindutiao()
-								}else{
-									clearInterval(acttimed)
-								}
-							},500)
-						});	
-				}
-			},600)
-        }
-        //下一曲
-        function next(){
-			var indexr=index+1
-				if(indexr==audios.length){
-					indexr=0
-					}
-			var imgvl=audios[indexr].getAttribute('imgvl')
-			cdimgr.setAttribute("src",imgvl)
-			needle.classList.remove('needled')
-			changCdr()
-            clearInterval(timercd)
-            clearInterval(timer)
-            
-            qingkong();
-            index++;
-            reducejindutiao();
-            pauseall();
-            if(index==audios.length){
-                index=0;
-            }
-			
-            playChangeAllnbr();
-            audios[index].currentTime=0//恢复从0开始播放
-			console.log("现在的索引"+index)
-            
-			
-            jindutiao();
-            var audioName=audios[index].getAttribute('name')
-			// var imgvl=audios[index].getAttribute('imgvl')
-            var navs = document.getElementsByTagName('title')[0]
-            navs.innerHTML=audioName
-			setTimeout(function(){
-				needle.classList.add('needled')
-				
-				var playPromise;
-
-				playPromise = audios[index].play();
-				if (playPromise) {
-				                playPromise.then(() => {
-				                    // 音频加载成功
-				                    // 音频的播放需要耗时
-							audios[index].play();
-				                    setTimeout(() => {
-				                        // 后续操作
-				                    }, audios[index].duration); // audio.duration 为音频的时长单位为秒
-				
-				
-				                }).catch((e) => {
-				                    // 音频加载失败
-							
-							
-							var acttime=setInterval(function(){
-								if(audios[index].paused==true){
-								
-								
-								audios[index].load();
-								audios[index].play();
-								autoPlayAudio();
-								
-
-					document.addEventListener("WeixinJSBridgeReady", function () {
-						
-　　　　audios[index].play();
-　　}, false);
-　　document.addEventListener('YixinJSBridgeReady', function() {//易信
-　　　　audios[index].play();
-　　}, false);
-
-
-								}else{
-									clearInterval(acttime)
-								}
-							},500)
-							var acttimed=setInterval(function(){
-							if(time_r.innerHTML=="NaN:NaN"){
-								clearInterval(timer1)
-								jindutiao()
-								}else{
-									clearInterval(acttimed)
-								}
-							},500)
-						});		
-				}
-			},600)
-            console.log(navs)
-        }
-        //播放进度
-        function jindutiao(){
-            //获取当前歌曲的歌长
-            // alert('wohsijindut')
-            var lenth=audios[index].duration;
-            var lenth1=parseInt(lenth);
-           
-                var minute1=parseInt(lenth1/60);
-                if(lenth1%60<10){
-                    time_r.innerHTML=minute1+":0"+lenth1%60+"";
-                }else{
-                    time_r.innerHTML=minute1+":"+lenth1%60+"";
-                }
-                
-            timer1=setInterval(function(){
-              var cur=audios[index].currentTime;//获取当前的播放时间
-              plength.style.width=alllength/parseFloat(lenth)*parseFloat(cur)+"px";
-            },50)
-        }
-	    function addtime(){
-                
-                timer2=setInterval(function(){
-                  var cur=parseInt(audios[index].currentTime);//秒数
-                    var temp=cur;
-                   var minute=parseInt(temp/60);
-                    if(cur%60<10){
-                        time_l.innerHTML=""+minute+":0"+cur%60+"";
-                    }else{
-                        time_l.innerHTML=""+minute+":"+cur%60+"";
-                    }
-                },1000);
-                
-        }
-          function playChange(){
-             
-            
-            
-            //点击播放
-        function start(){    
-         timer=setInterval(function(){
-            cd.style.transform="rotate("+deg+"deg)";
-            deg+=0.1;
-            if(deg>360){
-                deg=0;
-            }
-        },1)
-        play.classList.remove('btn-stop')
-        
-        needle.classList.add('needled')
-        var pms=audios[index].play()
-		if(pms){
-						pms.then(() => {
-							// 音频加载成功
-							// 音频的播放需要耗时
-							audios[index].play();
-							setTimeout(() => {
-								// 后续操作
-								
-							}, audios[index].duration); // audio.duration 为音频的时长单位为秒
-		
-		
-						}).catch((e) => {
-							// 音频加载失败
-							audios[index].play();
-							
-							var acttime=setInterval(function(){
-								if(audios[index].paused==true){
-								
-								audios[index].load()
-								audios[index].play();
-								
-								autoPlayAudio();
-
-					document.addEventListener("WeixinJSBridgeReady", function () {
-						
-　　　　audios[index].play();
-　　}, false);
-　　document.addEventListener('YixinJSBridgeReady', function() {//易信
-　　　　audios[index].play();
-　　}, false);
-
-
-								}else{
-									clearInterval(acttime)
-								}
-							},500)
-							var acttimed=setInterval(function(){
-							if(time_r.innerHTML=="NaN:NaN"){
-								clearInterval(timer1)
-								jindutiao()
-								}else{
-									clearInterval(acttimed)
-								}
-							},500)
-						});
 						}
-        open =false
-    return timer,open
-    }
-    //暂停
-        function stop(){
-            // var start = start()
-                clearInterval(timer)
-                clearInterval(timercd)
-                clearInterval(timer1)
-                clearInterval(timer2)
-                open = true
-                play.classList.add('btn-stop')
-                needle.classList.remove('needled')
-                audios[index].pause();
-        }
-        
-            if(open){
-		clearInterval(timer1)		
-                start()
-                jindutiao() 
-                addtime()
-               
-            }else if(open==false){
-                stop()
-            }
-        
-    }
+					}, 0)
+				}
 
-    play.onclick=playChange
-    nextbtn.onclick=next
-    prevbtn.onclick=bef
-	
-    function begin(){
-        playChange()
-    }
-	setTimeout(function(){
-		for(var n=0;n<audios.length;n++){
-				audios[n].addEventListener("ended",function(){
+				function qingkong() { //清空所有的计时器 并重新更新歌曲时长
+					clearInterval(timer);
+					clearInterval(timer1);
+					clearInterval(timer2);
+					timer2 = setInterval(function() {
+						var cur = parseInt(audio.currentTime); //秒数
+						var temp = cur;
+						var minute = parseInt(temp / 60);
+						if (cur % 60 < 10) {
+							time_l.innerHTML = "" + minute + ":0" + cur % 60 + "";
+						} else {
+							time_l.innerHTML = "" + minute + ":" + cur % 60 + "";
+						}
+					}, 1000);
+				}
+				//上一曲
+				function bef() {
+					var indexl = index - 1
+					if (indexl == -1) {
+						indexl = audios.length - 1
+					}
+
+					var imgvl = audios[indexl].imgvl
+					cdimgl.setAttribute("src", imgvl)
+
+					clearInterval(timercd)
+					clearInterval(timer)
+					// playChangeCd();//重置cd 并重新旋转
+					qingkong();
+					needle.classList.remove('needled')
+					index--;
 					
-					next()
-				})
-	     }
-		play.onclick()
-	},2000)
-var audioName=audios[index].getAttribute('name')
-var navs = document.getElementsByTagName('title')[0]
-            navs.innerHTML=audioName
-    
-}
-</script>
+					
+					reducejindutiao();
+					pauseall();
+					if (index == -1) {
+						index = audios.length - 1;
+					}
+					playFun(audios[index].src)
+					// playChangeAllnbr();
+					audios[index].currentTime = 0 //恢复从0开始播放
+
+					jindutiao();
+					var audioName = audios[index].name
+					var navs = document.getElementsByTagName('title')[0]
+					navs.innerHTML = audioName
+					changCdl()
+					console.log(navs)
+					setTimeout(function() {
+						needle.classList.add('needled')
+						var playPromise;
+
+						playPromise = audio.play();
+						if (playPromise) {
+							playPromise.then(() => {
+								// 音频加载成功
+								// 音频的播放需要耗时
+								audio.play();
+								setTimeout(() => {
+									// 后续操作
+
+								}, audio.duration * 1); // audio.duration 为音频的时长单位为秒
+
+
+							}).catch((e) => {
+								audio.play();
+								var acttime = setInterval(function() {
+									if (audio.paused == true) {
+
+										audio.load()
+										audio.play();
+
+
+
+										document.addEventListener("WeixinJSBridgeReady", function() {
+
+											audio.play();
+										}, false);
+										document.addEventListener('YixinJSBridgeReady', function() { //易信
+											audio.play();
+										}, false);
+
+
+									} else {
+										clearInterval(acttime)
+									}
+								}, 500)
+								var acttimed = setInterval(function() {
+									if (time_r.innerHTML == "NaN:NaN") {
+										clearInterval(timer1)
+										jindutiao()
+									} else {
+										clearInterval(acttimed)
+									}
+								}, 500)
+							});
+						}
+					}, 600)
+				}
+				//下一曲
+				function next() {
+					var indexr = index + 1
+					if (indexr == audios.length) {
+						indexr = 0
+					}
+					var imgvl = audios[indexr].imgvl
+					
+					cdimgr.setAttribute("src", imgvl)
+					needle.classList.remove('needled')
+					changCdr()
+					clearInterval(timercd)
+					clearInterval(timer)
+
+					qingkong();
+					index++;
+					
+					reducejindutiao();
+					pauseall();
+					if (index == audios.length) {
+						index = 0;
+					}
+playFun(audios[indexr].src)
+					// playChangeAllnbr();
+					audios[index].currentTime = 0 //恢复从0开始播放
+					console.log("现在的索引" + index)
+
+
+					
+					var audioName = audios[index].name
+					// var imgvl=audios[index].getAttribute('imgvl')
+					var navs = document.getElementsByTagName('title')[0]
+					navs.innerHTML = audioName
+					setTimeout(function() {
+						needle.classList.add('needled')
+
+						var playPromise;
+						
+						playPromise = audio.play();
+						if (playPromise) {
+							playPromise.then(() => {
+								// 音频加载成功
+								// 音频的播放需要耗时
+								
+								audio.load();
+								audio.play();
+								jindutiao();
+								setTimeout(() => {
+									// 后续操作
+								}, audio.duration); // audio.duration 为音频的时长单位为秒
+
+
+							}).catch((e) => {
+
+								// 音频加载失败
+
+								showMoadl()
+
+								var acttime = setInterval(function() {
+									if (audio.paused == true) {
+
+
+										audio.load();
+										audio.play();
+										autoPlayAudio();
+
+
+										document.addEventListener("WeixinJSBridgeReady", function() {
+
+											audio.play();
+										}, false);
+										document.addEventListener('YixinJSBridgeReady', function() { //易信
+											audio.play();
+										}, false);
+
+
+									} else {
+										clearInterval(acttime)
+									}
+								}, 500)
+								var acttimed = setInterval(function() {
+									if (time_r.innerHTML == "NaN:NaN") {
+										clearInterval(timer1)
+										jindutiao()
+									} else {
+										clearInterval(acttimed)
+									}
+								}, 500)
+							});
+						}
+					}, 600)
+					console.log(navs)
+				}
+
+
+
+				//加载失败展示Moadl
+				function showMoadl() {
+					modelTip.style.display = "block"
+					document.querySelector(".pg_musicbody").addEventListener('click', hideMoadl);
+					audio.addEventListener("playing", hideMoadl);
+				}
+
+				//加载失败隐藏Moadl,并播放
+				function hideMoadl() {
+						
+					modelTip.style.display = "none"
+					audio.load();
+					clearInterval(timer1)
+					jindutiao()
+// playChangeAllnbr()
+					document.querySelector(".pg_musicbody").removeEventListener('click', hideMoadl);
+					audio.removeEventListener("playing", hideMoadl);
+				}
+
+				//播放进度
+				function jindutiao() {
+					//获取当前歌曲的歌长
+					
+					audio.addEventListener("canplay",fun)
+					
+				      function fun(){
+						var lenth = audio.duration;
+						var lenth1 = parseInt(lenth);
+						
+						var minute1 = parseInt(lenth1 / 60);
+						if (lenth1 % 60 < 10) {
+							time_r.innerHTML = minute1 + ":0" + lenth1 % 60 + "";
+						} else {
+							time_r.innerHTML = minute1 + ":" + lenth1 % 60 + "";
+						}
+						
+						timer1 = setInterval(function() {
+							var cur = audio.currentTime; //获取当前的播放时间
+							plength.style.width = alllength / parseFloat(lenth) * parseFloat(cur) + "px";
+						}, 50)
+						audio.removeEventListener("canplay",fun)
+					}
+					
+					
+				}
+
+				function addtime() {
+
+					timer2 = setInterval(function() {
+						var cur = parseInt(audio.currentTime); //秒数
+						var temp = cur;
+						var minute = parseInt(temp / 60);
+						if (cur % 60 < 10) {
+							time_l.innerHTML = "" + minute + ":0" + cur % 60 + "";
+						} else {
+							time_l.innerHTML = "" + minute + ":" + cur % 60 + "";
+						}
+					}, 1000);
+
+				}
+
+				function playChange() {
+
+
+
+					//点击播放
+					function start() {
+						timer = setInterval(function() {
+							cd.style.transform = "rotate(" + deg + "deg)";
+							deg += 0.1;
+							if (deg > 360) {
+								deg = 0;
+							}
+						}, 1)
+						play.classList.remove('btn-stop')
+
+						needle.classList.add('needled')
+						playFun(audios[index].src)
+						var pms = audio.play()
+						if (pms) {
+							pms.then(() => {
+								// 音频加载成功
+								// 音频的播放需要耗时
+								audio.play();
+								jindutiao();
+								setTimeout(() => {
+									// 后续操作
+
+								}, audio.duration); // audio.duration 为音频的时长单位为秒
+
+
+							}).catch((e) => {
+								// 音频加载失败
+								audio.play();
+								showMoadl()
+								var acttime = setInterval(function() {
+									if (audio.paused == true) {
+
+										audio.load()
+										audio.play();
+
+										autoPlayAudio();
+
+										document.addEventListener("WeixinJSBridgeReady", function() {
+
+											audio.play();
+										}, false);
+										document.addEventListener('YixinJSBridgeReady', function() { //易信
+											audio.play();
+										}, false);
+
+
+									} else {
+										clearInterval(acttime)
+									}
+								}, 500)
+								var acttimed = setInterval(function() {
+									if (time_r.innerHTML == "NaN:NaN") {
+										clearInterval(timer1)
+										jindutiao()
+									} else {
+										clearInterval(acttimed)
+									}
+								}, 500)
+							});
+						}
+						open = false
+						return timer, open
+					}
+					//暂停
+					function stop() {
+						// var start = start()
+						clearInterval(timer)
+						clearInterval(timercd)
+						clearInterval(timer1)
+						clearInterval(timer2)
+						open = true
+						play.classList.add('btn-stop')
+						needle.classList.remove('needled')
+						audio.pause();
+					}
+
+					if (open) {
+						clearInterval(timer1)
+						start()
+						// jindutiao()
+						addtime()
+
+					} else if (open == false) {
+						stop()
+					}
+
+				}
+
+				play.onclick = playChange
+				nextbtn.onclick = next
+				prevbtn.onclick = bef
+
+				function begin() {
+					playChange()
+				}
+
+
+				var audioName = audios[index].name
+				var navs = document.getElementsByTagName('title')[0]
+				navs.innerHTML = audioName
+
+			}
+		</script>
 
 	</body>
 </html>
