@@ -55,11 +55,12 @@ body{
     height: 100%;
 }
 .disc{
+	border-radius: 100%;
 position: relative;
 z-index: 1;
 width: 100%;
 height: 100%;
-border-radius: 50%;
+
 background: hsla(0,0%,100%,.1);
 background-image: url(../image/music/disc.png);
 background-position: 50%;
@@ -70,6 +71,7 @@ background-repeat: no-repeat;
     position: absolute;
     top: 17.59259vw;
     left: 50%;
+	border-radius: 100%;
     width: 72.44444vw;
     height: 72.44444vw;
     margin-left: -36.22222vw;
@@ -77,6 +79,7 @@ background-repeat: no-repeat;
     animation: circle-rotate 12s linear infinite;
 }
 .disc-boxs{
+	
     position: absolute;
     top: 17.59259vw;
     left: 136%;
