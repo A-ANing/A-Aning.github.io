@@ -1861,7 +1861,7 @@
 				onrendered: function(e) {
 					try {
 						var t = detectEdge(e);
-						t.flakeCount = 50, Snowflakes.init(t)
+						t.flakeCount = 3, Snowflakes.init(t)
 					} catch (n) {}
 				}
 			});
@@ -1967,9 +1967,9 @@
 				</section>
 			</div>
 
-
-
-			<div id="modelTip" style="width: 100%;z-index: 999;position: fixed;top: 0;display: none;">
+			<div class="masks"></div>
+			<div class="maskscolor"></div>
+			<div id="modelTip" style="width: 100%;z-index: 999;position: fixed;top: 0;display: none;z-index: 999;">
 				<div style="background-color: rgba(0,0,0,0.5);">
 					<h2 style="color: #F24A08;">提示</h2>
 					<div style="color: #fff;text-indent: 30px;">由于浏览器禁止自动播放，请点击界面任何地方，将会自动播放</div>
@@ -1980,8 +1980,7 @@
 		</div>
 		<script src="disjs/wx.js" type="text/javascript" charset="utf-8"></script>
 		<script>
-			var audios = [
-				{
+			var audios = [{
 					name: "下山-要不要买菜",
 					src: "http://music.163.com/song/media/outer/url?id=1404885266.mp3",
 					imgvl: "http://p2.music.126.net/Aj4X1kpV-C2LLi-e_Xhgvg==/109951164499744148.jpg?param=130y130"
@@ -1996,7 +1995,7 @@
 					src: "http://music.163.com/song/media/outer/url?id=1391891631.mp3",
 					imgvl: "http://p2.music.126.net/J6HaJjtgv-yVVjyUm-h-AA==/109951164373633387.jpg?param=130y130"
 				},
-				
+
 				{
 					name: "你的答案-阿冗",
 					src: "http://music.163.com/song/media/outer/url?id=1400256289.mp3",
@@ -2039,7 +2038,7 @@
 				}
 
 				// alert('s')
-				document.querySelector("body").setAttribute("style", "background-color:rgba(78,78,78,1)!important")
+				document.querySelector("body").setAttribute("style", "background-color:rgba(255,255,255,1)!important")
 				var play = document.querySelector('.btn-play') //播放展暂停按钮
 				// 				play.onclick = function() {
 				// 					playFun("http://music.163.com/song/media/outer/url?id=1400256289.mp3")
@@ -2051,7 +2050,7 @@
 				var audio4 = document.getElementById('audio4')
 				var audio5 = document.getElementById('audio5')
 				// var audios = [audio1, audio2, audio3, audio4, audio5]
-
+				var masks = document.querySelector(".masks")
 
 				var alllength = document.querySelector('.mmProgress').offsetWidth //进度条的总长度px
 				var nextbtn = document.querySelector('.btn-next')
@@ -2326,7 +2325,7 @@
 					playFun(audios[index].src)
 					// playChangeAllnbr();
 					audios[index].currentTime = 0 //恢复从0开始播放
-
+					masks.style.backgroundImage = "url(" + imgvl + ")"
 					jindutiao();
 					var audioName = audios[index].name
 					var navs = document.getElementsByTagName('title')[0]
@@ -2406,6 +2405,7 @@
 					if (index == audios.length) {
 						index = 0;
 					}
+					masks.style.backgroundImage = "url(" + imgvl + ")"
 					playFun(audios[indexr].src)
 					// playChangeAllnbr();
 					audios[index].currentTime = 0 //恢复从0开始播放
@@ -2558,6 +2558,8 @@
 
 						needle.classList.add('needled')
 						playFun(audios[index].src)
+						var imgvl = audios[index].imgvl
+						masks.style.backgroundImage = "url(" + imgvl + ")"
 						var pms = audio.play()
 						if (pms) {
 							pms.then(() => {
