@@ -1980,7 +1980,13 @@
 		</div>
 		<script src="disjs/wx.js" type="text/javascript" charset="utf-8"></script>
 		<script>
-			var audios = [{
+			var audios = [
+				{
+					name: "下山-要不要买菜",
+					src: "http://music.163.com/song/media/outer/url?id=1404885266.mp3",
+					imgvl: "http://p2.music.126.net/Aj4X1kpV-C2LLi-e_Xhgvg==/109951164499744148.jpg?param=130y130"
+				},
+				{
 					name: "感情医生-尚士达",
 					src: "http://music.163.com/song/media/outer/url?id=1407794268.mp3",
 					imgvl: "http://p1.music.126.net/oJ7XPcc9wFxCeYt67np5-A==/109951164529896396.jpg?param=130y130"
@@ -1990,11 +1996,7 @@
 					src: "http://music.163.com/song/media/outer/url?id=1391891631.mp3",
 					imgvl: "http://p2.music.126.net/J6HaJjtgv-yVVjyUm-h-AA==/109951164373633387.jpg?param=130y130"
 				},
-				{
-					name: "下山-要不要买菜",
-					src: "http://music.163.com/song/media/outer/url?id=1404885266.mp3",
-					imgvl: "http://p2.music.126.net/Aj4X1kpV-C2LLi-e_Xhgvg==/109951164499744148.jpg?param=130y130"
-				},
+				
 				{
 					name: "你的答案-阿冗",
 					src: "http://music.163.com/song/media/outer/url?id=1400256289.mp3",
@@ -2092,7 +2094,7 @@
 						next()
 					})
 
-					// play.onclick()
+					play.onclick()
 				}, 2000)
 
 
@@ -2112,7 +2114,7 @@
 
 
 
-
+						audio.load();
 						audio.play();
 						jindutiao();
 					});
